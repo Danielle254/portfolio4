@@ -1,0 +1,9 @@
+red, rose, turquoise
+
+colors: {
+ 'text': '#090405',
+ 'background': '#FFFFFF',
+ 'primary': '#9c464a',
+ 'secondary': '#d79597',
+ 'accent': '#0ec3c0',
+},
