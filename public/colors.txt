@@ -1,0 +1,11 @@
+LIGHT
+
+bg - #fcfcfc
+text - #171717
+primary - #025d63
+
+DARK
+
+bg - #121212
+text - #e2e8f0
+primary - #34deea
