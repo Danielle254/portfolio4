@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function Apprenticeship() {
+export default function GridironSurvivor() {
   return <div></div>;
 }
