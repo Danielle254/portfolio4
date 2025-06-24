@@ -1,3 +1,6 @@
+"use client";
+
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import React from "react";
 import MobileNav from "./MobileNav";
@@ -12,17 +15,33 @@ import {
 import { Download, Blend, Moon, Sun, HeartHandshake } from "lucide-react";
 
 export default function Header() {
+  const pathname = usePathname();
+
   return (
     <nav className="grid grid-cols-3 pt-2 pb-8">
       <ul className="hidden md:flex md:flex-row md:mt-4">
         <li>
           <Button variant="link" asChild className="px-0 pr-4">
-            <Link href="/">Bio</Link>
+            <Link
+              href="/"
+              className={`[&.active]:underline ${
+                pathname === "/" ? "active" : ""
+              }`}
+            >
+              Bio
+            </Link>
           </Button>
         </li>
         <li>
           <Button variant="link" asChild>
-            <Link href="/portfolio">Portfolio</Link>
+            <Link
+              href="/portfolio"
+              className={`[&.active]:underline ${
+                pathname === "/portfolio" ? "active" : ""
+              }`}
+            >
+              Portfolio
+            </Link>
           </Button>
         </li>
         <li>
