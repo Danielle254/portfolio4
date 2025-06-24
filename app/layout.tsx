@@ -9,7 +9,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="max-w-[1200px] mx-auto">
+      <body className="max-w-[1000px] mx-auto">
         <Header />
         <main>{children}</main>
         <Footer />
