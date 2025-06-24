@@ -1,5 +1,24 @@
 [
   {
+    "title": "Great Harvest Baking",
+    "description": "Marketing landing page for prospective franchisees",
+    "tags": [
+      "Next.js",
+      "TypeScript",
+      "React.js",
+      "HubSpot",
+      "Tailwind CSS",
+      "a11y"
+    ],
+    "type": "Freelance",
+    "links": [
+      "/projects/greatharvest",
+      "https://franchising.greatharvest.com/",
+      "https://github.com/kepsteen/great-harvest-landing-page"
+    ],
+    "img": "/projectSummary/greatharvestcover.jpg"
+  },
+  {
     "title": "Service Dogs Around Town",
     "description": "Community navigation tool for service dog handlers",
     "tags": [
@@ -20,25 +39,7 @@
     ],
     "img": "/projectSummary/sdatv3cover.png"
   },
-  {
-    "title": "Great Harvest Baking",
-    "description": "Marketing landing page for prospective franchisees",
-    "tags": [
-      "Next.js",
-      "TypeScript",
-      "React.js",
-      "HubSpot",
-      "Tailwind CSS",
-      "a11y"
-    ],
-    "type": "Freelance",
-    "links": [
-      "/projects/greatharvest",
-      "https://franchising.greatharvest.com/",
-      "https://github.com/kepsteen/great-harvest-landing-page"
-    ],
-    "img": "/projectSummary/greatharvestcover.jpg"
-  },
+
   {
     "title": "Elfgorithm",
     "description": "Secret Santa SaaS app",
