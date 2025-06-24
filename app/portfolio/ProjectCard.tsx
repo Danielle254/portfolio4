@@ -19,14 +19,14 @@ export default function ProjectCard({
   projectSummary: ProjectSummaryType;
 }) {
   return (
-    <div className="w-[480px]">
+    <div className="w-[480px] mb-8">
       <Card>
         <CardHeader>
           <div className="flex flex-row justify-between items-center mb-4">
             <CardTitle className="text-lg">
               <Link href={projectSummary.links[0]}>{projectSummary.title}</Link>
             </CardTitle>
-            <p className="rounded-full text-sm bg-linear-to-b from-gray-200 to-gray-100 px-2">
+            <p className="rounded-full text-sm bg-accent px-2">
               {projectSummary.type}
             </p>
           </div>
@@ -48,13 +48,13 @@ export default function ProjectCard({
           <Button asChild>
             <Link href={projectSummary.links[0]}>Details »</Link>
           </Button>
-          <Button variant="ghost" asChild>
+          <Button variant="outline" asChild>
             <Link href={projectSummary.links[1]} target="_blank">
               <Globe />
               Site
             </Link>
           </Button>
-          <Button variant="ghost" asChild>
+          <Button variant="outline" asChild>
             <Link href={projectSummary.links[2]} target="_blank">
               <Code />
               Code
