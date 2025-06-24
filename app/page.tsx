@@ -1,9 +1,7 @@
-import ProjectList from "./components/ProjectList/ProjectList";
-
 export default function Home() {
   return (
-    <>
-      <ProjectList />
-    </>
+    <div>
+      <title>Danielle Lindblom Portfolio</title>
+    </div>
   );
 }
