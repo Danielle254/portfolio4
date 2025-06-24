@@ -4,4 +4,5 @@ export type ProjectSummaryType = {
   tags: string[];
   type: "freelance" | "solo" | "apprenticeship";
   links: string[];
+  img: string;
 };

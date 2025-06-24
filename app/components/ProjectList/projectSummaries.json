@@ -9,7 +9,7 @@
       "Google Maps API",
       "Material UI",
       "Firebase",
-      "Accessibility",
+      "a11y",
       "Vercel"
     ],
     "type": "solo",
@@ -17,7 +17,8 @@
       "/projects/servicedogsaroundtown",
       "https://servicedogsaroundtown.vercel.app/",
       "https://github.com/Danielle254/sdat_v3"
-    ]
+    ],
+    "img": "/projectSummary/sdatv3cover.png"
   },
   {
     "title": "Great Harvest Baking",
@@ -28,14 +29,15 @@
       "React.js",
       "HubSpot",
       "Tailwind CSS",
-      "Accessibility"
+      "a11y"
     ],
     "type": "freelance",
     "links": [
       "/projects/greatharvest",
       "https://franchising.greatharvest.com/",
       "https://github.com/kepsteen/great-harvest-landing-page"
-    ]
+    ],
+    "img": "/projectSummary/greatharvestcover.jpg"
   },
   {
     "title": "Elfgorithm",
@@ -49,14 +51,15 @@
       "Tailwind CSS",
       "Jest",
       "React Testing Library",
-      "Accessibility"
+      "a11y"
     ],
     "type": "apprenticeship",
     "links": [
       "/projects/elfgorithm",
       "https://elecretanta-letsgettechnical.vercel.app/",
       "https://github.com/guardiansofthegit-collab/elecretanta"
-    ]
+    ],
+    "img": "/projectSummary/elfcover.jpg"
   },
   {
     "title": "Gridiron Survivor",
@@ -70,13 +73,14 @@
       "Tailwind CSS",
       "Jest",
       "React Testing Library",
-      "Accessibility"
+      "a11y"
     ],
     "type": "apprenticeship",
     "links": [
       "/projects/gridironsurvivor",
       "https://staging.gridironsurvivor.com/",
       "https://github.com/LetsGetTechnical/gridiron-survivor"
-    ]
+    ],
+    "img": "/projectSummary/GIScover.png"
   }
 ]
