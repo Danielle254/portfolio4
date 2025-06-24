@@ -12,6 +12,7 @@ import type { ProjectSummaryType } from "./ProjectSummaryType";
 import { Button } from "@/components/ui/button";
 import { Globe, Code } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ProjectCard({
   projectSummary,
@@ -19,7 +20,7 @@ export default function ProjectCard({
   projectSummary: ProjectSummaryType;
 }) {
   return (
-    <div className="w-[400px]">
+    <div className="w-[480px]">
       <Card>
         <CardHeader>
           <div className="flex flex-row justify-between items-center mb-4">
@@ -42,14 +43,20 @@ export default function ProjectCard({
           <CardDescription>{projectSummary.description}</CardDescription>
         </CardContent>
         <CardFooter className="flex flex-row gap-2">
-          <Button>Details »</Button>
-          <Button variant="ghost">
-            <Globe />
-            Site
+          <Button asChild>
+            <Link href={projectSummary.links[0]}>Details »</Link>
           </Button>
-          <Button variant="ghost">
-            <Code />
-            Code
+          <Button variant="ghost" asChild>
+            <Link href={projectSummary.links[1]} target="_blank">
+              <Globe />
+              Site
+            </Link>
+          </Button>
+          <Button variant="ghost" asChild>
+            <Link href={projectSummary.links[2]} target="_blank">
+              <Code />
+              Code
+            </Link>
           </Button>
         </CardFooter>
       </Card>
