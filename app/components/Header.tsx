@@ -55,8 +55,8 @@ export default function Header() {
       </ul>
       <Link href="/">
         <Image
-          src="/dev logo.png"
-          height={400}
+          src="/logo.png"
+          height={200}
           width={400}
           alt="Danielle Lindblom - Frontend Developer"
         />
