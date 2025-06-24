@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Card,
-  CardAction,
   CardContent,
   CardDescription,
   CardFooter,
@@ -31,7 +30,6 @@ export default function ProjectCard({
               {projectSummary.type}
             </p>
           </div>
-
           <ul className="flex flex-row gap-2 text-xs flex-wrap">
             {projectSummary.tags.map((tag) => (
               <li key={tag} className="border-[1px] rounded-full bg-card px-1">
