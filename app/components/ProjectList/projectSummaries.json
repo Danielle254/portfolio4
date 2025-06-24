@@ -12,7 +12,7 @@
       "a11y",
       "Vercel"
     ],
-    "type": "solo",
+    "type": "Solo",
     "links": [
       "/projects/servicedogsaroundtown",
       "https://servicedogsaroundtown.vercel.app/",
@@ -31,7 +31,7 @@
       "Tailwind CSS",
       "a11y"
     ],
-    "type": "freelance",
+    "type": "Freelance",
     "links": [
       "/projects/greatharvest",
       "https://franchising.greatharvest.com/",
@@ -53,7 +53,7 @@
       "React Testing Library",
       "a11y"
     ],
-    "type": "apprenticeship",
+    "type": "Apprenticeship",
     "links": [
       "/projects/elfgorithm",
       "https://elecretanta-letsgettechnical.vercel.app/",
@@ -75,7 +75,7 @@
       "React Testing Library",
       "a11y"
     ],
-    "type": "apprenticeship",
+    "type": "Apprenticeship",
     "links": [
       "/projects/gridironsurvivor",
       "https://staging.gridironsurvivor.com/",
