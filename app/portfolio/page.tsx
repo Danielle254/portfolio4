@@ -12,7 +12,7 @@ export default async function ProjectList() {
   return (
     <div>
       <title>Projects - Danielle Lindblom Portfolio</title>
-      <h2 className="text-2xl my-4">Portfolio</h2>
+      <h1 className="text-2xl my-4">Portfolio</h1>
       <div className="flex flex-wrap justify-between">
         {data.map((project: ProjectSummaryType) => (
           <ProjectCard projectSummary={project} key={project.title} />
