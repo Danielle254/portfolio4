@@ -2,7 +2,6 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import React from "react";
 import MobileNav from "./MobileNav";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -12,13 +11,21 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Download, Blend, Moon, Sun, HeartHandshake } from "lucide-react";
+import {
+  Download,
+  Lightbulb,
+  LightbulbOff,
+  HeartHandshake,
+  CircleChevronLeft,
+} from "lucide-react";
+import { useState } from "react";
 
 export default function Header() {
   const pathname = usePathname();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="grid grid-cols-3 pt-2 pb-8">
+    <nav className="flex flex-row justify-between items-center md:grid md:grid-cols-3 md:pt-2 md:pb-8">
       <ul className="hidden md:flex md:flex-row md:mt-4">
         <li>
           <Button variant="link" asChild className="px-0 pr-4">
@@ -46,24 +53,39 @@ export default function Header() {
         </li>
         <li>
           <Button variant="link" asChild>
-            <Link href="">
+            <Link href="/resume.pdf">
               Resume
               <Download />
             </Link>
           </Button>
         </li>
       </ul>
-      <Link href="/">
-        <Image
-          src="/logo.png"
-          height={200}
-          width={400}
-          alt="Danielle Lindblom - Frontend Developer"
+      <div className="relative h-[100px] w-[200px] lg-h-[400px] lg-h-[200px] mx-auto">
+        <Link href="/">
+          <Image
+            src="/logo.png"
+            layout="fill"
+            alt="Danielle Lindblom - Frontend Developer"
+          />
+        </Link>
+      </div>
+      <button
+        className="md:hidden"
+        onClick={() => setMobileMenuOpen(true)}
+        aria-label="open menu"
+      >
+        <CircleChevronLeft
+          aria-hidden="true"
+          size={32}
+          className="mr-4"
+          strokeWidth={1}
         />
-      </Link>
-      <button className="md:hidden">Menu</button>
-      <MobileNav />
-      <div className="flex flex-row gap-4 mt-4 justify-self-end">
+      </button>
+      <MobileNav
+        isOpen={mobileMenuOpen}
+        closeMenu={() => setMobileMenuOpen(false)}
+      />
+      <div className="hidden md:flex flex-row gap-4 mt-4 justify-self-end">
         <DropdownMenu modal={false}>
           <DropdownMenuTrigger asChild>
             <Button variant="outline">
@@ -132,21 +154,20 @@ export default function Header() {
         </DropdownMenu>
         <DropdownMenu modal={false}>
           <DropdownMenuTrigger asChild>
-            <Button variant="outline">
-              <Blend />
-              Theme
+            <Button variant="outline" title="choose page theme">
+              <Lightbulb />
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent className="w-40" align="end">
             <DropdownMenuItem>
               <Button variant="ghost">
-                <Sun />
+                <Lightbulb />
                 Light Mode
               </Button>
             </DropdownMenuItem>
             <DropdownMenuItem>
               <Button variant="ghost">
-                <Moon />
+                <LightbulbOff />
                 Dark Mode
               </Button>
             </DropdownMenuItem>
