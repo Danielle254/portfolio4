@@ -9,7 +9,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="max-w-[1000px] mx-auto min-h-screen flex flex-col justify-between">
+      <body className="max-w-[1000px] mx-auto min-h-screen flex flex-col justify-between px-2">
         <Header />
         <main>{children}</main>
         <Footer />
