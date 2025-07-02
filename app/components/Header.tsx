@@ -60,7 +60,7 @@ export default function Header() {
           </Button>
         </li>
       </ul>
-      <div className="relative h-[100px] w-[200px] lg-h-[400px] lg-h-[200px] mx-auto focus-within:outline">
+      <div className="relative h-[100px] w-[200px] lg-h-[400px] lg-h-[200px] mx-auto focus-within:outline-2">
         <Link href="/">
           <Image
             src="/logo.png"
