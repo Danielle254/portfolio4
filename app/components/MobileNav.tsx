@@ -19,22 +19,31 @@ export default function MobileNav({ isOpen, closeMenu }: DrawerProps) {
         onClick={closeMenu}
         className="fixed top-8 right-6 border border-transparent hover:border-foreground"
         aria-label="close menu"
+        tabIndex={isOpen ? 0 : -1}
       >
         <X aria-hidden="true" />
       </button>
       <ul className="text-lg flex flex-col gap-4">
         <li>
-          <Link href="/" onClick={closeMenu}>
+          <Link href="/" onClick={closeMenu} tabIndex={isOpen ? 0 : -1}>
             Bio
           </Link>
         </li>
         <li>
-          <Link href="/portfolio" onClick={closeMenu}>
+          <Link
+            href="/portfolio"
+            onClick={closeMenu}
+            tabIndex={isOpen ? 0 : -1}
+          >
             Portfolio
           </Link>
         </li>
         <li>
-          <Link href="/resume.pdf" className="flex flex-row gap-1 items-center">
+          <Link
+            href="/resume.pdf"
+            className="flex flex-row gap-1 items-center"
+            tabIndex={isOpen ? 0 : -1}
+          >
             Resume
             <Download size={20} />
           </Link>
@@ -45,6 +54,7 @@ export default function MobileNav({ isOpen, closeMenu }: DrawerProps) {
             href="mailto:danielle.lindblom@gmail.com"
             className="flex flex-row items-center gap-2"
             onClick={closeMenu}
+            tabIndex={isOpen ? 0 : -1}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -65,6 +75,7 @@ export default function MobileNav({ isOpen, closeMenu }: DrawerProps) {
             target="_blank"
             className="flex flex-row items-center gap-2"
             onClick={closeMenu}
+            tabIndex={isOpen ? 0 : -1}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -85,6 +96,7 @@ export default function MobileNav({ isOpen, closeMenu }: DrawerProps) {
             target="_blank"
             className="flex flex-row items-center gap-2"
             onClick={closeMenu}
+            tabIndex={isOpen ? 0 : -1}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
