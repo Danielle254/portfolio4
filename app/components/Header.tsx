@@ -60,7 +60,7 @@ export default function Header() {
           </Button>
         </li>
       </ul>
-      <div className="relative h-[100px] w-[200px] lg-h-[400px] lg-h-[200px] mx-auto">
+      <div className="relative h-[100px] w-[200px] lg-h-[400px] lg-h-[200px] mx-auto focus-within:outline">
         <Link href="/">
           <Image
             src="/logo.png"
@@ -93,7 +93,7 @@ export default function Header() {
               Connect
             </Button>
           </DropdownMenuTrigger>
-          <DropdownMenuContent className="w-40 flex flex-col gap-2" align="end">
+          <DropdownMenuContent className="w-32 flex flex-col gap-2" align="end">
             <DropdownMenuItem>
               <Link
                 href="mailto:danielle.lindblom@gmail.com"
