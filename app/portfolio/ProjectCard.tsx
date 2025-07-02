@@ -24,7 +24,9 @@ export default function ProjectCard({
         <CardHeader>
           <div className="flex flex-row justify-between items-center mb-4">
             <CardTitle className="text-lg">
-              <Link href={projectSummary.links[0]}>{projectSummary.title}</Link>
+              <Link href={projectSummary.links[0]} tabIndex={-1}>
+                {projectSummary.title}
+              </Link>
             </CardTitle>
             <p className="rounded-full text-sm bg-accent px-2">
               {projectSummary.type}
@@ -39,23 +41,41 @@ export default function ProjectCard({
           </ul>
         </CardHeader>
         <CardContent>
-          <Link href={projectSummary.links[0]}>
-            <Image alt="" src={projectSummary.img} height={350} width={450} />
+          <Link href={projectSummary.links[0]} tabIndex={-1}>
+            <Image
+              alt="go to homepage"
+              src={projectSummary.img}
+              height={350}
+              width={450}
+            />
           </Link>
           <CardDescription>{projectSummary.description}</CardDescription>
         </CardContent>
         <CardFooter className="flex flex-row gap-2">
           <Button asChild>
-            <Link href={projectSummary.links[0]}>Details »</Link>
+            <Link
+              href={projectSummary.links[0]}
+              aria-label={`${projectSummary.title} Details`}
+            >
+              Details »
+            </Link>
           </Button>
           <Button variant="outline" asChild>
-            <Link href={projectSummary.links[1]} target="_blank">
+            <Link
+              href={projectSummary.links[1]}
+              target="_blank"
+              aria-label={`${projectSummary.title}  live site`}
+            >
               <Globe />
               Site
             </Link>
           </Button>
           <Button variant="outline" asChild>
-            <Link href={projectSummary.links[2]} target="_blank">
+            <Link
+              href={projectSummary.links[2]}
+              target="_blank"
+              aria-label={`${projectSummary.title} code`}
+            >
               <Code />
               Code
             </Link>
