@@ -1,5 +1,17 @@
 [
   {
+    "title": "Quantiiv",
+    "description": "Business website",
+    "tags": ["Next.js", "TypeScript", "React.js", "Tailwind CSS", "a11y"],
+    "type": "Freelance",
+    "links": [
+      "/projects/quantiiv",
+      "https://quantiiv.com/",
+      "https://github.com/kepsteen/great-harvest-landing-page"
+    ],
+    "img": "/projectSummary/quantiivCover.png"
+  },
+  {
     "title": "Great Harvest Baking",
     "description": "Marketing landing page",
     "tags": ["Next.js", "TypeScript", "React.js", "Tailwind CSS", "a11y"],
@@ -11,27 +23,6 @@
     ],
     "img": "/projectSummary/greatharvestcover.jpg"
   },
-  {
-    "title": "Service Dogs Around Town",
-    "description": "Community navigation tool for service dog handlers",
-    "tags": [
-      "Next.js",
-      "TypeScript",
-      "React.js",
-      "Google Maps API",
-      "Material UI",
-      "Firebase",
-      "a11y"
-    ],
-    "type": "Solo",
-    "links": [
-      "/projects/servicedogsaroundtown",
-      "https://servicedogsaroundtown.vercel.app/",
-      "https://github.com/Danielle254/sdat_v3"
-    ],
-    "img": "/projectSummary/sdatv3cover.png"
-  },
-
   {
     "title": "Elfgorithm",
     "description": "Secret Santa SaaS app",
@@ -54,6 +45,27 @@
     ],
     "img": "/projectSummary/elfcover.jpg"
   },
+  {
+    "title": "Service Dogs Around Town",
+    "description": "Community navigation tool",
+    "tags": [
+      "Next.js",
+      "TypeScript",
+      "React.js",
+      "Google Maps API",
+      "Material UI",
+      "Firebase",
+      "a11y"
+    ],
+    "type": "Solo",
+    "links": [
+      "/projects/servicedogsaroundtown",
+      "https://servicedogsaroundtown.vercel.app/",
+      "https://github.com/Danielle254/sdat_v3"
+    ],
+    "img": "/projectSummary/sdatv3cover.png"
+  },
+
   {
     "title": "Gridiron Survivor",
     "description": "Football survivor pool application",
