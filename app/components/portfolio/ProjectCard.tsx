@@ -24,9 +24,7 @@ export default function ProjectCard({
         <CardHeader>
           <div className="flex flex-row justify-between items-center mb-4">
             <CardTitle className="text-lg">
-              <Link href={projectSummary.links[0]} tabIndex={-1}>
-                {projectSummary.title}
-              </Link>
+              <Link href={projectSummary.links[0]}>{projectSummary.title}</Link>
             </CardTitle>
             <p className="rounded-full text-sm bg-accent px-2">
               {projectSummary.type}
@@ -41,14 +39,12 @@ export default function ProjectCard({
           </ul>
         </CardHeader>
         <CardContent>
-          <Link href={projectSummary.links[0]} tabIndex={-1}>
-            <Image
-              alt="go to homepage"
-              src={projectSummary.img}
-              height={350}
-              width={450}
-            />
-          </Link>
+          <Image
+            alt="go to homepage"
+            src={projectSummary.img}
+            height={350}
+            width={450}
+          />
           <CardDescription className="pt-2">
             {projectSummary.description}
           </CardDescription>
