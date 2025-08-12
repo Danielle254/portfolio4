@@ -23,10 +23,12 @@ export default function Bio() {
             <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl mb-4">
               Hi, I'm <span className="text-primary">Danielle</span>
             </h1>
-            <p className="text-lg text-foreground sm:text-xl max-w-2xl mx-auto md:mx-0">
+            <p className="text-lg text-foreground sm:text-xl max-w-2xl mx-auto md:mx-0 text-balance">
               I'm a{" "}
               <span className="font-bold">Frontend Software Developer</span>{" "}
               specializing in user experience and web accessibility.
+              <br />
+              Located in Minneapolis, MN and open to new opportunities!
             </p>
             <div className="mt-8 flex flex-wrap justify-center md:justify-start gap-6">
               <div className="flex flex-col items-center">
