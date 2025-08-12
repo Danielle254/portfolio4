@@ -1,15 +1,8 @@
 [
   {
     "title": "Great Harvest Baking",
-    "description": "Marketing landing page for prospective franchisees",
-    "tags": [
-      "Next.js",
-      "TypeScript",
-      "React.js",
-      "HubSpot",
-      "Tailwind CSS",
-      "a11y"
-    ],
+    "description": "Marketing landing page",
+    "tags": ["Next.js", "TypeScript", "React.js", "Tailwind CSS", "a11y"],
     "type": "Freelance",
     "links": [
       "/projects/greatharvest",
@@ -28,8 +21,7 @@
       "Google Maps API",
       "Material UI",
       "Firebase",
-      "a11y",
-      "Vercel"
+      "a11y"
     ],
     "type": "Solo",
     "links": [
