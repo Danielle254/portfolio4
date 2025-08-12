@@ -21,33 +21,32 @@ export default function ProjectCard({
   return (
     <div className="max-w-[480px] basis-[300px] flex-auto">
       <Card className="h-full flex flex-col justify-between">
-        <CardHeader>
-          <div className="flex flex-row justify-between items-center mb-4">
-            <CardTitle className="text-lg">
-              <Link href={projectSummary.links[0]}>{projectSummary.title}</Link>
-            </CardTitle>
-            <p className="rounded-full text-sm bg-accent px-2">
-              {projectSummary.type}
-            </p>
-          </div>
-          <ul className="flex flex-row gap-2 text-xs flex-wrap">
+        <CardHeader className="flex flex-row justify-between items-center mb-2">
+          <CardTitle className="text-xl font-bold">
+            <h3>{projectSummary.title}</h3>
+          </CardTitle>
+          <p className="rounded-full text-sm bg-accent px-2">
+            {projectSummary.type}
+          </p>
+        </CardHeader>
+        <CardContent>
+          <CardDescription className="pb-4">
+            {projectSummary.description}
+          </CardDescription>
+          <Image
+            alt=""
+            src={projectSummary.img}
+            height={350}
+            width={450}
+            className="border-1 border-black shadow"
+          />
+          <ul className="flex flex-row gap-2 text-xs flex-wrap py-4">
             {projectSummary.tags.map((tag) => (
               <li key={tag} className="border-[1px] rounded-full bg-card px-1">
                 {tag}
               </li>
             ))}
           </ul>
-        </CardHeader>
-        <CardContent>
-          <Image
-            alt="go to homepage"
-            src={projectSummary.img}
-            height={350}
-            width={450}
-          />
-          <CardDescription className="pt-2">
-            {projectSummary.description}
-          </CardDescription>
         </CardContent>
         <CardFooter className="flex flex-row gap-2">
           <Button asChild>
