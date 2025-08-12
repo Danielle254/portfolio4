@@ -6,7 +6,7 @@ import {
 } from "react-icons/si";
 import { RxAccessibility } from "react-icons/rx";
 
-export default function Bio() {
+export default function Hero() {
   return (
     <section className="flex items-center justify-center py-10" id="bio">
       <title>Danielle Lindblom Portfolio</title>
