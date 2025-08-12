@@ -19,8 +19,8 @@ export default function ProjectCard({
   projectSummary: ProjectSummaryType;
 }) {
   return (
-    <div className="w-[480px] mb-8">
-      <Card>
+    <div className="max-w-[480px] basis-[300px] flex-auto">
+      <Card className="h-full flex flex-col justify-between">
         <CardHeader>
           <div className="flex flex-row justify-between items-center mb-4">
             <CardTitle className="text-lg">
