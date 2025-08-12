@@ -49,7 +49,9 @@ export default function ProjectCard({
               width={450}
             />
           </Link>
-          <CardDescription>{projectSummary.description}</CardDescription>
+          <CardDescription className="pt-2">
+            {projectSummary.description}
+          </CardDescription>
         </CardContent>
         <CardFooter className="flex flex-row gap-2">
           <Button asChild>
