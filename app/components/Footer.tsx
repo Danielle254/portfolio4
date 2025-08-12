@@ -5,10 +5,12 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-10 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto flex flex-col items-center text-center">
+    <footer className="py-10">
+      <div className="max-w-6xl mx-auto flex flex-col items-start">
         <p className="text-primary text-base font-semibold mb-4">
           Danielle Lindblom - Frontend Software Developer
+          <br />
+          Minneapolis, MN
         </p>
         <p className="text-xs sm:text-sm mb-4">
           This site built with <span className="font-semibold">Next.js</span>,{" "}
