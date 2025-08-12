@@ -64,28 +64,5 @@
       "https://github.com/Danielle254/sdat_v3"
     ],
     "img": "/projectSummary/sdatv3cover.png"
-  },
-
-  {
-    "title": "Gridiron Survivor",
-    "description": "Football survivor pool application",
-    "tags": [
-      "Next.js",
-      "TypeScript",
-      "React.js",
-      "Appwrite",
-      "shadcn/ui",
-      "Tailwind CSS",
-      "Jest",
-      "React Testing Library",
-      "a11y"
-    ],
-    "type": "Apprenticeship",
-    "links": [
-      "/projects/gridironsurvivor",
-      "https://staging.gridironsurvivor.com/",
-      "https://github.com/LetsGetTechnical/gridiron-survivor"
-    ],
-    "img": "/projectSummary/GIScover.png"
   }
 ]
