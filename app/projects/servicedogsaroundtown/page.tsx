@@ -21,7 +21,7 @@ export default function SDAT() {
       <h1 className="text-3xl my-4">Service Dogs Around Town</h1>
       <Image
         src="/projectSummary/sdatv3cover.png"
-        alt="Great Harvest website"
+        alt="Service Dogs Around Town website"
         sizes="100vw"
         width={0}
         height={0}
