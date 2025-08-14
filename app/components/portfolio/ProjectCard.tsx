@@ -48,7 +48,7 @@ export default function ProjectCard({
             ))}
           </ul>
         </CardContent>
-        <CardFooter className="flex flex-row gap-2">
+        <CardFooter className="flex flex-row gap-4">
           <Button asChild>
             <Link
               href={projectSummary.links[0]}
