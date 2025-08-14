@@ -2,7 +2,7 @@
   {
     "title": "Quantiiv",
     "description": "Business website",
-    "tags": ["Next.js", "TypeScript", "React.js", "Tailwind CSS"],
+    "tags": ["Next.js", "TypeScript", "React.js", "Tailwind CSS", "shadcn/ui"],
     "type": "Freelance",
     "links": [
       "/projects/quantiiv",
@@ -30,7 +30,7 @@
       "Next.js",
       "TypeScript",
       "React.js",
-      "Supabase",
+      "OpenAI API",
       "shadcn/ui",
       "Tailwind CSS",
       "Jest",
@@ -39,8 +39,8 @@
     "type": "Apprenticeship",
     "links": [
       "/projects/elfgorithm",
-      "https://elecretanta-letsgettechnical.vercel.app/",
-      "https://github.com/guardiansofthegit-collab/elecretanta"
+      "https://staging.secretsanta-exchange.com/",
+      "https://github.com/LetsGetTechnical/elecretanta"
     ],
     "img": "/projectSummary/elfcover.jpg"
   },
