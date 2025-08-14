@@ -1,14 +1,15 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import { Globe, Code } from "lucide-react";
+import { Globe } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 
 export default function GreatHarvest() {
   const tags = ["Next.js", "TypeScript", "React.js", "Tailwind CSS"];
   return (
     <div>
       <title>Great Harvest Project | Danielle Lindblom Portfolio</title>
-      <h1 className="text-3xl my-4">Great Harvest</h1>
+      <h1 className="text-3xl my-4">Great Harvest Bread Company</h1>
       <Image
         src="/projectSummary/greatharvestcover.jpg"
         alt="Great Harvest website"
@@ -66,13 +67,16 @@ export default function GreatHarvest() {
       </section>
       <div className="flex flex-row flex-wrap gap-8 my-12">
         <Button asChild size="lg">
-          <Link href="" target="_blank">
+          <Link href="https://franchising.greatharvest.com/" target="_blank">
             Live Site <Globe />
           </Link>
         </Button>
         <Button variant="outline" asChild size="lg">
-          <Link href="" target="_blank">
-            Code <Code />
+          <Link
+            href="https://github.com/kepsteen/great-harvest-landing-page"
+            target="_blank"
+          >
+            Code <FaGithub />
           </Link>
         </Button>
       </div>
