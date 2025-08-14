@@ -2,7 +2,7 @@
   {
     "title": "Quantiiv",
     "description": "Business website",
-    "tags": ["Next.js", "TypeScript", "React.js", "Tailwind CSS", "a11y"],
+    "tags": ["Next.js", "TypeScript", "React.js", "Tailwind CSS"],
     "type": "Freelance",
     "links": [
       "/projects/quantiiv",
@@ -14,7 +14,7 @@
   {
     "title": "Great Harvest Baking",
     "description": "Marketing landing page",
-    "tags": ["Next.js", "TypeScript", "React.js", "Tailwind CSS", "a11y"],
+    "tags": ["Next.js", "TypeScript", "React.js", "Tailwind CSS"],
     "type": "Freelance",
     "links": [
       "/projects/greatharvest",
@@ -34,8 +34,7 @@
       "shadcn/ui",
       "Tailwind CSS",
       "Jest",
-      "React Testing Library",
-      "a11y"
+      "React Testing Library"
     ],
     "type": "Apprenticeship",
     "links": [
@@ -54,8 +53,7 @@
       "React.js",
       "Google Maps API",
       "Material UI",
-      "Firebase",
-      "a11y"
+      "Firebase"
     ],
     "type": "Solo",
     "links": [
