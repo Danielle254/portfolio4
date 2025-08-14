@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/card";
 import type { ProjectSummaryType } from "./ProjectSummaryType";
 import { Button } from "@/components/ui/button";
-import { Globe, Code } from "lucide-react";
+import { Globe, Code, ChevronsRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -54,7 +54,7 @@ export default function ProjectCard({
               href={projectSummary.links[0]}
               aria-label={`${projectSummary.title} Details`}
             >
-              Details »
+              Details <ChevronsRight />
             </Link>
           </Button>
           <Button variant="outline" asChild>
@@ -63,8 +63,7 @@ export default function ProjectCard({
               target="_blank"
               aria-label={`${projectSummary.title}  live site`}
             >
-              <Globe />
-              Site
+              Website <Globe />
             </Link>
           </Button>
           <Button variant="outline" asChild>
@@ -73,8 +72,7 @@ export default function ProjectCard({
               target="_blank"
               aria-label={`${projectSummary.title} code`}
             >
-              <Code />
-              Code
+              Code <Code />
             </Link>
           </Button>
         </CardFooter>
