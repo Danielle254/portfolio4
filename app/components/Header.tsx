@@ -26,26 +26,26 @@ export default function Header() {
 
   return (
     <nav className="flex flex-row justify-between items-center md:grid md:grid-cols-3 md:pt-2 md:pb-8">
-      <ul className="hidden md:flex md:flex-row md:mt-4">
+      <ul className="hidden md:flex md:flex-row md:mt-4 text-base">
         <li>
           <Button variant="link" asChild className="px-0 pr-4">
             <Link
               href="/"
-              className={`[&.active]:underline ${
+              /* className={`[&.active]:underline ${
                 pathname === "/" ? "active" : ""
-              }`}
+              }`} */
             >
-              Bio
+              Home
             </Link>
           </Button>
         </li>
         <li>
           <Button variant="link" asChild>
             <Link
-              href="/portfolio"
-              className={`[&.active]:underline ${
+              href="/#portfolio"
+              /*               className={`[&.active]:underline ${
                 pathname === "/portfolio" ? "active" : ""
-              }`}
+              }`} */
             >
               Portfolio
             </Link>
