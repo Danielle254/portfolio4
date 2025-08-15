@@ -15,7 +15,7 @@ export default function MobileNav({ isOpen, closeMenu }: DrawerProps) {
   return (
     <div
       className={`fixed top-0 right-0 py-6 z-10 h-full w-full transition-transform duration-300 transform bg-primary text-background flex flex-col justify-center items-center ${
-        isOpen ? "translate-x-0" : "translate-x-full"
+        isOpen ? "translate-x-0" : "translate-x-full invisible"
       }`}
     >
       <button
@@ -51,7 +51,9 @@ export default function MobileNav({ isOpen, closeMenu }: DrawerProps) {
             <Download size={20} />
           </Link>
         </li>
-        <Separator />
+      </ul>
+      <Separator />
+      <ul>
         <li>
           <Link
             href="mailto:danielle.lindblom@gmail.com"
@@ -114,18 +116,18 @@ export default function MobileNav({ isOpen, closeMenu }: DrawerProps) {
             GitHub
           </Link>
         </li>
-        <Separator />
-        <Button
-          variant="outline"
-          className="text-foreground"
-          onClick={() => {
-            theme === "light" ? setTheme("dark") : setTheme("light");
-          }}
-        >
-          {theme === "light" ? "Dark Mode" : "Light Mode"}
-          {theme === "light" ? <LightbulbOff /> : <Lightbulb />}
-        </Button>
       </ul>
+      <Separator />
+      <Button
+        variant="outline"
+        className="text-foreground"
+        onClick={() => {
+          theme === "light" ? setTheme("dark") : setTheme("light");
+        }}
+      >
+        {theme === "light" ? "Dark Mode" : "Light Mode"}
+        {theme === "light" ? <LightbulbOff /> : <Lightbulb />}
+      </Button>
     </div>
   );
 }
