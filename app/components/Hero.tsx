@@ -32,29 +32,41 @@ export default function Hero() {
             </p>
             <div className="mt-8 flex flex-wrap justify-center md:justify-start gap-6">
               <div className="flex flex-col items-center">
-                <SiNextdotjs className="h-8 w-8 text-primary" />
+                <SiNextdotjs
+                  className="h-8 w-8 text-primary"
+                  aria-hidden="true"
+                />
                 <span className="mt-2 text-xs text-foreground/90">Next.js</span>
               </div>
               <div className="flex flex-col items-center">
-                <SiReact className="h-8 w-8 text-primary" />
+                <SiReact className="h-8 w-8 text-primary" aria-hidden="true" />
                 <span className="mt-2 text-xs text-foreground/90">
                   React.js
                 </span>
               </div>
               <div className="flex flex-col items-center">
-                <SiTypescript className="h-8 w-8 text-primary" />
+                <SiTypescript
+                  className="h-8 w-8 text-primary"
+                  aria-hidden="true"
+                />
                 <span className="mt-2 text-xs text-foreground/90">
                   TypeScript
                 </span>
               </div>
               <div className="flex-col items-center hidden sm:flex">
-                <SiTailwindcss className="h-8 w-8 text-primary" />
+                <SiTailwindcss
+                  className="h-8 w-8 text-primary"
+                  aria-hidden="true"
+                />
                 <span className="mt-2 text-xs text-foreground/90">
                   Tailwind CSS
                 </span>
               </div>
               <div className="flex flex-col items-center">
-                <RxAccessibility className="h-8 w-8 text-primary" />
+                <RxAccessibility
+                  className="h-8 w-8 text-primary"
+                  aria-hidden="true"
+                />
                 <span className="mt-2 text-xs text-foreground/90">
                   Accessibility
                 </span>
