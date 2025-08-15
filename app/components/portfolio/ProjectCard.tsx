@@ -30,7 +30,7 @@ export default function ProjectCard({
           </p>
         </CardHeader>
         <CardContent>
-          <CardDescription className="pb-4">
+          <CardDescription className="pb-4 text-foreground">
             {projectSummary.description}
           </CardDescription>
           <Image
@@ -42,7 +42,10 @@ export default function ProjectCard({
           />
           <ul className="flex flex-row gap-2 text-xs flex-wrap py-4">
             {projectSummary.tags.map((tag) => (
-              <li key={tag} className="border-[1px] rounded-full bg-card px-1">
+              <li
+                key={tag}
+                className="border-[1px] border-foreground rounded-full bg-card px-1"
+              >
                 {tag}
               </li>
             ))}

@@ -60,7 +60,7 @@ export default function GreatHarvest() {
           {tags.map((tag) => (
             <li
               key={tag}
-              className="border-2 border-primary rounded-full bg-gray-200 px-2"
+              className="border-2 border-primary rounded-full bg-card px-2"
             >
               {tag}
             </li>

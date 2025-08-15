@@ -14,7 +14,7 @@ export default function Hero() {
         <div className="flex flex-col md:flex-row items-center md:space-x-8">
           <div className="flex-shrink-0 mb-6 md:mb-0">
             <img
-              className="h-48 w-48 rounded-full object-cover border-4 border-gray-700 shadow-lg"
+              className="h-48 w-48 rounded-full object-cover border-4 border-foreground/80 shadow-lg"
               src="/headshot.jpg"
               alt="Danielle Lindblom"
             />
@@ -33,23 +33,29 @@ export default function Hero() {
             <div className="mt-8 flex flex-wrap justify-center md:justify-start gap-6">
               <div className="flex flex-col items-center">
                 <SiNextdotjs className="h-8 w-8 text-primary" />
-                <span className="mt-2 text-xs text-gray-600">Next.js</span>
+                <span className="mt-2 text-xs text-foreground/90">Next.js</span>
               </div>
               <div className="flex flex-col items-center">
                 <SiReact className="h-8 w-8 text-primary" />
-                <span className="mt-2 text-xs text-gray-600">React.js</span>
+                <span className="mt-2 text-xs text-foreground/90">
+                  React.js
+                </span>
               </div>
               <div className="flex flex-col items-center">
                 <SiTypescript className="h-8 w-8 text-primary" />
-                <span className="mt-2 text-xs text-gray-600">TypeScript</span>
+                <span className="mt-2 text-xs text-foreground/90">
+                  TypeScript
+                </span>
               </div>
               <div className="flex-col items-center hidden sm:flex">
                 <SiTailwindcss className="h-8 w-8 text-primary" />
-                <span className="mt-2 text-xs text-gray-600">Tailwind CSS</span>
+                <span className="mt-2 text-xs text-foreground/90">
+                  Tailwind CSS
+                </span>
               </div>
               <div className="flex flex-col items-center">
                 <RxAccessibility className="h-8 w-8 text-primary" />
-                <span className="mt-2 text-xs text-gray-600">
+                <span className="mt-2 text-xs text-foreground/90">
                   Accessibility
                 </span>
               </div>
