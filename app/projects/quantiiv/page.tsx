@@ -30,35 +30,49 @@ export default function Quantiiv() {
         }}
       />
       <section>
-        <p className="text-lg/8 mt-8">
-          Elfgorithm is a secret Santa SaaS app created as a part of the
-          Gridiron Survivor Software Engineering Apprenticeship. This website
-          allows users to set up a gift exchange group and utilizes the OpenAI
-          API to generate gift suggestions based on the recipient's preferences.
+        <p className="text-lg/8 mt-8 text-balance">
+          This freelance project was to build an entire business website for
+          Quantiiv - a restaurant industry consultancy that utilizes AI and
+          analytics. I worked with a small team of designers and developers to
+          execute this in two, 1-week sprints.
           <br />
-          <br />I also conducted detailed accessibility audits, using both
-          subject matter expert knowledge as well as automated tools. I
-          inspected the code and the browser DOM, and I utilized Axe dev tools
-          for testing. Overall, I caught and fixed 24+ critical accessibility
-          issues. <br />
           <br />
-          This was a great real world project and a wonderful experience working
-          directly with a paying customer.
+          The first deployment included a Home page, a Contact page, and basic
+          content. This was turned around quickly so that the customer could
+          launch a time sensitive marketing campaign.
+          <br />
+          <br />
+          The second sprint added a testimonials section, a headless WordPress
+          blog integration, and an About page. As of August 2025, this has not
+          yet been deployed by the customer as they are working on collecting
+          testimonials and creating their library of blog posts.
+          <br />
+          <br />
+          As part of this project, I also performed internal project management
+          for the developer team and conducted thorough accessibility audits to
+          ensure delivery of a quality product.
+          <br />
+          *Note: the GitHub repo is currently private but will be made public
+          upon the launch of V2.
         </p>
       </section>
       <section>
         <h2 className="text-2xl mb-8 mt-12 font-semibold">Key Contributions</h2>
-        <ul className="list-disc list-inside text-lg space-y-4 marker:text-primary">
-          <li>Comprehensive audit identifying gaps in testing</li>
+        <ul className="list-disc list-outside ms-8 text-lg space-y-4 marker:text-primary text-balance">
+          <li>Built entire Contact and About pages, including form</li>
+          <li>Built an interactive, accessible wheel of popovers</li>
           <li>
-            200+ tickets generated for the creation of unit, integration, and
-            E2E tests
+            Conducted detailed accessibility audits using code analysis and
+            testing tools
           </li>
-          <li>Created logout feature</li>
-          <li>Championed an accessibility audit of the entire site</li>
-          <li>Identified 24+ accessibility issues across 3 pages</li>
-          <li>Created onboarding training on our PR processes</li>
-          <li>Addressed accessibility color contrast issue</li>
+          <li>
+            Identified and resolved 32+ accessibility issues during production
+          </li>
+          <li>Created the testimonials section of the home page</li>
+          <li>
+            Worked from detailed Figma designs and ensured cross-browser
+            compatibile code
+          </li>
         </ul>
       </section>
       <section>
