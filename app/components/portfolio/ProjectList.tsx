@@ -12,7 +12,7 @@ export default async function ProjectList() {
   return (
     <section id="portfolio" className="pb-12">
       <h2 className="text-2xl my-4">Portfolio</h2>
-      <div className="flex flex-wrap gap-8 justify-center items-stretch">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-stretch">
         {data.map((project: ProjectSummaryType) => (
           <ProjectCard projectSummary={project} key={project.title} />
         ))}

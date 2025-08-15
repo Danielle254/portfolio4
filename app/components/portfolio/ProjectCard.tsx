@@ -19,7 +19,7 @@ export default function ProjectCard({
   projectSummary: ProjectSummaryType;
 }) {
   return (
-    <div className="max-w-[480px] basis-[300px] flex-auto min-w-0">
+    <div className="">
       <Card className="h-full flex flex-col justify-between">
         <CardHeader className="flex flex-row justify-between items-center mb-2">
           <CardTitle className="text-xl font-bold">
@@ -36,9 +36,10 @@ export default function ProjectCard({
           <Image
             alt=""
             src={projectSummary.img}
-            height={350}
-            width={450}
-            className="border-1 border-black shadow"
+            sizes="100vw"
+            width={0}
+            height={0}
+            className="border-1 border-black shadow h-auto w-full"
           />
           <ul className="flex flex-row gap-2 text-xs flex-wrap py-4">
             {projectSummary.tags.map((tag) => (
