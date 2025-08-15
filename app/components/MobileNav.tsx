@@ -17,7 +17,7 @@ export default function MobileNav({ isOpen, closeMenu }: DrawerProps) {
     >
       <button
         onClick={closeMenu}
-        className="fixed top-8 right-6 border border-transparent hover:border-foreground"
+        className="fixed top-8 right-6 border border-transparent hover:border-foreground cursor-pointer"
         aria-label="close menu"
         tabIndex={isOpen ? 0 : -1}
       >
@@ -26,12 +26,12 @@ export default function MobileNav({ isOpen, closeMenu }: DrawerProps) {
       <ul className="text-lg flex flex-col gap-4">
         <li>
           <Link href="/" onClick={closeMenu} tabIndex={isOpen ? 0 : -1}>
-            Bio
+            Home
           </Link>
         </li>
         <li>
           <Link
-            href="/portfolio"
+            href="/#portfolio"
             onClick={closeMenu}
             tabIndex={isOpen ? 0 : -1}
           >
