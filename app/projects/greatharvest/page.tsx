@@ -70,7 +70,7 @@ export default function GreatHarvest() {
       <div className="flex flex-row flex-wrap gap-8 my-12">
         <Button asChild size="lg">
           <Link href="https://franchising.greatharvest.com/" target="_blank">
-            Live Site <Globe />
+            Live Site <Globe aria-hidden="true" />
           </Link>
         </Button>
         <Button variant="outline" asChild size="lg">
@@ -78,7 +78,7 @@ export default function GreatHarvest() {
             href="https://github.com/kepsteen/great-harvest-landing-page"
             target="_blank"
           >
-            Code <FaGithub />
+            Code <FaGithub aria-hidden="true" />
           </Link>
         </Button>
       </div>

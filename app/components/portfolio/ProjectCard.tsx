@@ -58,7 +58,7 @@ export default function ProjectCard({
               href={projectSummary.links[0]}
               aria-label={`${projectSummary.title} Details`}
             >
-              Details <ChevronsRight />
+              Details <ChevronsRight aria-hidden="true" />
             </Link>
           </Button>
           <Button variant="outline" asChild>
@@ -67,7 +67,7 @@ export default function ProjectCard({
               target="_blank"
               aria-label={`${projectSummary.title}  live site`}
             >
-              Website <Globe />
+              Website <Globe aria-hidden="true" />
             </Link>
           </Button>
           <Button variant="outline" asChild>
@@ -76,7 +76,7 @@ export default function ProjectCard({
               target="_blank"
               aria-label={`${projectSummary.title} code`}
             >
-              Code <Code />
+              Code <Code aria-hidden="true" />
             </Link>
           </Button>
         </CardFooter>
