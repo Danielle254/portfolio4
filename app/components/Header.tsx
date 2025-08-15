@@ -19,8 +19,10 @@ import {
   CircleChevronLeft,
 } from "lucide-react";
 import { useState } from "react";
+import { useTheme } from "next-themes";
 
 export default function Header() {
+  const { theme, setTheme } = useTheme();
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -65,7 +67,7 @@ export default function Header() {
       <div className="relative h-[100px] w-[200px] lg:h-[150px] lg:w-[300px] md:mx-auto focus-within:outline-2">
         <Link href="/">
           <Image
-            src="/logo.png"
+            src={theme === "light" ? "/logo.png" : "/logo-dark.png"}
             layout="fill"
             alt="Danielle Lindblom - Frontend Developer"
           />
@@ -162,13 +164,13 @@ export default function Header() {
           </DropdownMenuTrigger>
           <DropdownMenuContent className="w-40" align="end">
             <DropdownMenuItem>
-              <Button variant="ghost">
+              <Button variant="ghost" onClick={() => setTheme("light")}>
                 <Lightbulb />
                 Light Mode
               </Button>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <Button variant="ghost">
+              <Button variant="ghost" onClick={() => setTheme("dark")}>
                 <LightbulbOff />
                 Dark Mode
               </Button>
