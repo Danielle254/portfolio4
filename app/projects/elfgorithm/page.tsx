@@ -84,7 +84,7 @@ export default function Elfgorithm() {
             href="https://staging.secretsanta-exchange.com/"
             target="_blank"
           >
-            Live Site <Globe />
+            Live Site <Globe aria-hidden="true" />
           </Link>
         </Button>
         <Button variant="outline" asChild size="lg">
@@ -92,7 +92,7 @@ export default function Elfgorithm() {
             href="https://github.com/LetsGetTechnical/elecretanta"
             target="_blank"
           >
-            Code <FaGithub />
+            Code <FaGithub aria-hidden="true" />
           </Link>
         </Button>
       </div>

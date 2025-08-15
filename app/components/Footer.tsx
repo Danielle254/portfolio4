@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
             aria-label="Email"
             title="Email"
           >
-            <FaEnvelope className="h-6 w-6" />
+            <FaEnvelope className="h-6 w-6" aria-hidden="true" />
           </a>
           <a
             href="https://github.com/Danielle254"
@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
             aria-label="GitHub"
             title="GitHub"
           >
-            <FaGithub className="h-6 w-6" />
+            <FaGithub className="h-6 w-6" aria-hidden="true" />
           </a>
           <a
             href="https://www.linkedin.com/in/danielle-lindblom/"
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
             aria-label="LinkedIn"
             title="LinkedIn"
           >
-            <FaLinkedin className="h-6 w-6" />
+            <FaLinkedin className="h-6 w-6" aria-hidden="true" />
           </a>
         </div>
       </div>

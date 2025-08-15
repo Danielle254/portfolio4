@@ -93,12 +93,12 @@ export default function SDAT() {
             href="https://servicedogsaroundtown.vercel.app/"
             target="_blank"
           >
-            Live Site <Globe />
+            Live Site <Globe aria-hidden="true" />
           </Link>
         </Button>
         <Button variant="outline" asChild size="lg">
           <Link href="https://github.com/Danielle254/sdat_v3" target="_blank">
-            Code <FaGithub />
+            Code <FaGithub aria-hidden="true" />
           </Link>
         </Button>
         <Button variant="outline" asChild size="lg">
@@ -106,7 +106,7 @@ export default function SDAT() {
             href="https://servicedogsaroundtownv2.vercel.app/"
             target="_blank"
           >
-            Version 2 <Globe />
+            Version 2 <Globe aria-hidden="true" />
           </Link>
         </Button>
         <Button variant="outline" asChild size="lg">
@@ -114,7 +114,7 @@ export default function SDAT() {
             href="https://danielle254.github.io/ServiceDogsAroundTown_v1/"
             target="_blank"
           >
-            Version 1 <Globe />
+            Version 1 <Globe aria-hidden="true" />
           </Link>
         </Button>
       </div>
