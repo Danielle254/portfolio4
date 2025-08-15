@@ -18,7 +18,7 @@ export default function SDAT() {
       <title>
         Service Dogs Around Town Project | Danielle Lindblom Portfolio
       </title>
-      <h1 className="text-3xl my-4">Service Dogs Around Town</h1>
+      <h1 className="text-3xl mt-12 text-balance">Service Dogs Around Town</h1>
       <Image
         src="/projectSummary/sdatv3cover.png"
         alt="Service Dogs Around Town website"
@@ -34,7 +34,7 @@ export default function SDAT() {
         }}
       />
       <section>
-        <p className="text-lg/8 mt-8">
+        <p className="text-lg/8 mt-8 text-balance">
           This is a personal project. It was broken down into multiple versions
           and deployments, and is now a multi-user, public application utilizing
           a database and multiple APIs. This is the third and final version of
@@ -56,7 +56,7 @@ export default function SDAT() {
       </section>
       <section>
         <h2 className="text-2xl mb-8 mt-12 font-semibold">Key Features</h2>
-        <ul className="list-disc list-inside text-lg space-y-4 marker:text-primary">
+        <ul className="list-disc list-outside ms-8 text-lg space-y-4 marker:text-primary text-balance">
           <li>Google login</li>
           <li>Search for a business with Google Maps Autocomplete API</li>
           <li>
@@ -87,7 +87,7 @@ export default function SDAT() {
           ))}
         </ul>
       </section>
-      <div className="flex flex-row flex-wrap gap-8 my-12">
+      <div className="flex flex-row flex-wrap gap-x-8 gap-y-4 my-12">
         <Button asChild size="lg">
           <Link
             href="https://servicedogsaroundtown.vercel.app/"

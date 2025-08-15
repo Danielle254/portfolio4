@@ -9,7 +9,9 @@ export default function GreatHarvest() {
   return (
     <div>
       <title>Great Harvest Project | Danielle Lindblom Portfolio</title>
-      <h1 className="text-3xl my-4">Great Harvest Bread Company</h1>
+      <h1 className="text-3xl my-4 text-balance">
+        Great Harvest Bread Company
+      </h1>
       <Image
         src="/projectSummary/greatharvestcover.jpg"
         alt="Great Harvest website"
@@ -25,7 +27,7 @@ export default function GreatHarvest() {
         }}
       />
       <section>
-        <p className="text-lg/8 mt-8">
+        <p className="text-lg/8 mt-8 text-balance">
           With a 6 day window from design approval to customer deadline, this
           freelance project had a very fast turnaround for coding. I worked with
           a small team of 3 designers and 2 other developers to construct the
@@ -42,7 +44,7 @@ export default function GreatHarvest() {
       </section>
       <section>
         <h2 className="text-2xl mb-8 mt-12 font-semibold">Key Contributions</h2>
-        <ul className="list-disc list-inside text-lg space-y-4 marker:text-primary">
+        <ul className="list-disc list-outside ms-8 text-lg space-y-4 marker:text-primary text-balance">
           <li>Our History section</li>
           <li>FAQ section with custom, accessible accordion</li>
           <li>Our Revolutionary Process section</li>

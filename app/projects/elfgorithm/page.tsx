@@ -34,7 +34,7 @@ export default function Elfgorithm() {
         }}
       />
       <section>
-        <p className="text-lg/8 mt-8">
+        <p className="text-lg/8 mt-8 text-balance">
           Elfgorithm is a secret Santa SaaS app created as a part of the
           Gridiron Survivor Software Engineering Apprenticeship. This website
           allows users to set up a gift exchange group and utilizes the OpenAI
@@ -53,7 +53,7 @@ export default function Elfgorithm() {
       </section>
       <section>
         <h2 className="text-2xl mb-8 mt-12 font-semibold">Key Contributions</h2>
-        <ul className="list-disc list-inside text-lg space-y-4 marker:text-primary">
+        <ul className="list-disc list-outside ms-8 text-lg space-y-4 marker:text-primary text-balance">
           <li>Comprehensive audit identifying gaps in testing</li>
           <li>
             200+ tickets generated for the creation of unit, integration, and
