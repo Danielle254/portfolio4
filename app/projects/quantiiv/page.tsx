@@ -89,12 +89,12 @@ export default function Quantiiv() {
       </section>
       <div className="flex flex-row flex-wrap gap-8 mt-24 mb-12">
         <Button asChild size="lg">
-          <Link href="" target="_blank">
+          <Link href="https://quantiiv.com" target="_blank">
             Live Site <Globe />
           </Link>
         </Button>
         <Button variant="outline" asChild size="lg">
-          <Link href="" target="_blank">
+          <Link href="https://quantiiv-v2.vercel.app/" target="_blank">
             V2 Preview <Globe />
           </Link>
         </Button>
