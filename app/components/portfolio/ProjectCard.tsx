@@ -19,7 +19,7 @@ export default function ProjectCard({
   projectSummary: ProjectSummaryType;
 }) {
   return (
-    <div className="max-w-[480px] basis-[300px] flex-auto">
+    <div className="max-w-[480px] basis-[300px] flex-auto min-w-0">
       <Card className="h-full flex flex-col justify-between">
         <CardHeader className="flex flex-row justify-between items-center mb-2">
           <CardTitle className="text-xl font-bold">
@@ -51,7 +51,7 @@ export default function ProjectCard({
             ))}
           </ul>
         </CardContent>
-        <CardFooter className="flex flex-row gap-4">
+        <CardFooter className="flex flex-row gap-4 flex-wrap">
           <Button asChild>
             <Link
               href={projectSummary.links[0]}
