@@ -26,26 +26,28 @@ export default function Header() {
 
   return (
     <nav className="flex flex-row justify-between items-center md:grid md:grid-cols-3 md:pt-2 md:pb-8">
-      <ul className="hidden md:flex md:flex-row md:mt-4">
+      <ul className="hidden md:flex md:flex-row md:mt-4 ">
         <li>
           <Button variant="link" asChild className="px-0 pr-4">
             <Link
               href="/"
-              className={`[&.active]:underline ${
+              /* className={`[&.active]:underline ${
                 pathname === "/" ? "active" : ""
-              }`}
+              }`} */
+              className="text-[16px]"
             >
-              Bio
+              Home
             </Link>
           </Button>
         </li>
         <li>
           <Button variant="link" asChild>
             <Link
-              href="/portfolio"
-              className={`[&.active]:underline ${
+              href="/#portfolio"
+              /*               className={`[&.active]:underline ${
                 pathname === "/portfolio" ? "active" : ""
-              }`}
+              }`} */
+              className="text-[16px]"
             >
               Portfolio
             </Link>
@@ -53,14 +55,14 @@ export default function Header() {
         </li>
         <li>
           <Button variant="link" asChild>
-            <Link href="/resume.pdf">
+            <Link href="/resume.pdf" className="text-[16px]">
               Resume
               <Download />
             </Link>
           </Button>
         </li>
       </ul>
-      <div className="relative h-[100px] w-[200px] lg-h-[400px] lg-h-[200px] mx-auto focus-within:outline-2">
+      <div className="relative h-[100px] w-[200px] lg:h-[150px] lg:w-[300px] md:mx-auto focus-within:outline-2">
         <Link href="/">
           <Image
             src="/logo.png"
@@ -70,7 +72,7 @@ export default function Header() {
         </Link>
       </div>
       <button
-        className="md:hidden"
+        className="md:hidden cursor-pointer"
         onClick={() => setMobileMenuOpen(true)}
         aria-label="open menu"
       >
@@ -88,7 +90,7 @@ export default function Header() {
       <div className="hidden md:flex flex-row gap-4 mt-4 justify-self-end">
         <DropdownMenu modal={false}>
           <DropdownMenuTrigger asChild>
-            <Button variant="outline">
+            <Button variant="outline" size="sm">
               <HeartHandshake />
               Connect
             </Button>
@@ -154,7 +156,7 @@ export default function Header() {
         </DropdownMenu>
         <DropdownMenu modal={false}>
           <DropdownMenuTrigger asChild>
-            <Button variant="outline" title="choose page theme">
+            <Button variant="outline" title="choose page theme" size="sm">
               <Lightbulb />
             </Button>
           </DropdownMenuTrigger>

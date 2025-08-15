@@ -10,7 +10,7 @@ export default async function ProjectList() {
   );
   const data = JSON.parse(file);
   return (
-    <section id="portfolio">
+    <section id="portfolio" className="pb-12">
       <h2 className="text-2xl my-4">Portfolio</h2>
       <div className="flex flex-wrap gap-8 justify-center items-stretch">
         {data.map((project: ProjectSummaryType) => (
