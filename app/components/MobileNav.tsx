@@ -1,7 +1,9 @@
 import Link from "next/link";
 import React from "react";
-import { X, Download } from "lucide-react";
+import { X, Download, Lightbulb, LightbulbOff } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button";
+import { useTheme } from "next-themes";
 
 type DrawerProps = {
   isOpen: boolean;
@@ -9,6 +11,7 @@ type DrawerProps = {
 };
 
 export default function MobileNav({ isOpen, closeMenu }: DrawerProps) {
+  const { theme, setTheme } = useTheme();
   return (
     <div
       className={`fixed top-0 right-0 py-6 z-10 h-full w-full transition-transform duration-300 transform bg-primary text-background flex flex-col justify-center items-center ${
@@ -111,6 +114,17 @@ export default function MobileNav({ isOpen, closeMenu }: DrawerProps) {
             GitHub
           </Link>
         </li>
+        <Separator />
+        <Button
+          variant="outline"
+          className="text-foreground"
+          onClick={() => {
+            theme === "light" ? setTheme("dark") : setTheme("light");
+          }}
+        >
+          {theme === "light" ? "Dark Mode" : "Light Mode"}
+          {theme === "light" ? <LightbulbOff /> : <Lightbulb />}
+        </Button>
       </ul>
     </div>
   );
