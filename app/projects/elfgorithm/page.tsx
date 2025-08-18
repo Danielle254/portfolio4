@@ -35,7 +35,7 @@ export default function Elfgorithm() {
       />
       <section>
         <p className="text-lg/8 mt-8 text-balance">
-          Elfgorithm is a secret Santa SaaS app created as a part of the
+          Elfgorithm is a Secret Santa SaaS app created as a part of the
           Gridiron Survivor Software Engineering Apprenticeship. This website
           allows users to set up a gift exchange group and utilizes the OpenAI
           API to generate gift suggestions based on the recipient's preferences.
