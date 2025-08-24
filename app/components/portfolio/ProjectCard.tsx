@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import {
   Card,
@@ -12,6 +14,7 @@ import { Button } from "@/components/ui/button";
 import { Globe, Code, ChevronsRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function ProjectCard({
   projectSummary,
@@ -19,15 +22,31 @@ export default function ProjectCard({
   projectSummary: ProjectSummaryType;
 }) {
   return (
-    <div className="">
+    <motion.div
+      className=""
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.7 }}
+    >
       <Card className="h-full flex flex-col justify-between">
         <CardHeader className="flex flex-row justify-between items-center mb-2">
           <CardTitle className="text-xl font-bold">
-            <h3>{projectSummary.title}</h3>
+            <motion.h3
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.7 }}
+            >
+              {projectSummary.title}
+            </motion.h3>
           </CardTitle>
-          <p className="rounded-full text-sm bg-accent px-2">
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+            className="rounded-full text-sm bg-accent px-2"
+          >
             {projectSummary.type}
-          </p>
+          </motion.p>
         </CardHeader>
         <CardContent>
           <CardDescription className="pb-4 text-foreground">
@@ -41,16 +60,24 @@ export default function ProjectCard({
             height={0}
             className="border-1 border-black shadow h-auto w-full"
           />
-          <ul className="flex flex-row gap-2 text-xs flex-wrap py-4">
+          <motion.ul
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+            className="flex flex-row gap-2 text-xs flex-wrap py-4"
+          >
             {projectSummary.tags.map((tag) => (
-              <li
+              <motion.li
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.7 }}
                 key={tag}
                 className="border-[1px] border-foreground rounded-full bg-card px-1"
               >
                 {tag}
-              </li>
+              </motion.li>
             ))}
-          </ul>
+          </motion.ul>
         </CardContent>
         <CardFooter className="flex flex-row gap-4 flex-wrap">
           <Button asChild>
@@ -81,6 +108,6 @@ export default function ProjectCard({
           </Button>
         </CardFooter>
       </Card>
-    </div>
+    </motion.div>
   );
 }

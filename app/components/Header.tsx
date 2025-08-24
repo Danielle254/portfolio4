@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { useTheme } from "next-themes";
+import { motion } from "framer-motion";
 
 export default function Header() {
   const { theme, setTheme } = useTheme();
@@ -27,9 +28,23 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="flex flex-row justify-between items-center md:grid md:grid-cols-3 md:pt-2 md:pb-8">
-      <ul className="hidden md:flex md:flex-row md:mt-4 ">
-        <li>
+    <motion.nav
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.7 }}
+      className="flex flex-row justify-between items-center md:grid md:grid-cols-3 md:pt-2 md:pb-8"
+    >
+      <motion.ul
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        className="hidden md:flex md:flex-row md:mt-4 "
+      >
+        <motion.li
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+        >
           <Button variant="link" asChild className="px-0 pr-4">
             <Link
               href="/"
@@ -41,8 +56,12 @@ export default function Header() {
               Home
             </Link>
           </Button>
-        </li>
-        <li>
+        </motion.li>
+        <motion.li
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+        >
           <Button variant="link" asChild>
             <Link
               href="/#portfolio"
@@ -54,17 +73,26 @@ export default function Header() {
               Portfolio
             </Link>
           </Button>
-        </li>
-        <li>
+        </motion.li>
+        <motion.li
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+        >
           <Button variant="link" asChild>
             <Link href="/resume.pdf" className="text-lg lg:text-[16px]">
               Resume
               <Download aria-label="download" />
             </Link>
           </Button>
-        </li>
-      </ul>
-      <div className="relative h-[100px] w-[200px] lg:h-[150px] lg:w-[300px] md:mx-auto focus-within:outline-2">
+        </motion.li>
+      </motion.ul>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        className="relative h-[100px] w-[200px] lg:h-[150px] lg:w-[300px] md:mx-auto focus-within:outline-2"
+      >
         <Link href="/">
           <Image
             src={theme === "light" ? "/logo.png" : "/logo-dark.png"}
@@ -72,8 +100,11 @@ export default function Header() {
             alt="Danielle Lindblom - Frontend Developer"
           />
         </Link>
-      </div>
-      <button
+      </motion.div>
+      <motion.button
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
         className="md:hidden cursor-pointer"
         onClick={() => setMobileMenuOpen(true)}
         aria-label="open menu"
@@ -84,12 +115,17 @@ export default function Header() {
           className="mr-4"
           strokeWidth={1}
         />
-      </button>
+      </motion.button>
       <MobileNav
         isOpen={mobileMenuOpen}
         closeMenu={() => setMobileMenuOpen(false)}
       />
-      <div className="hidden md:flex flex-row gap-4 mt-4 justify-self-end">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        className="hidden md:flex flex-row gap-4 mt-4 justify-self-end"
+      >
         <DropdownMenu modal={false}>
           <DropdownMenuTrigger asChild>
             <Button variant="outline" size="sm">
@@ -185,7 +221,7 @@ export default function Header() {
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
-      </div>
-    </nav>
+      </motion.div>
+    </motion.nav>
   );
 }
