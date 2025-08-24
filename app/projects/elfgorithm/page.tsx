@@ -1,8 +1,11 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { Globe } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export default function Elfgorithm() {
   const tags = [
@@ -16,9 +19,20 @@ export default function Elfgorithm() {
     "React Testing Library",
   ];
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.7 }}
+    >
       <title>Elfgorithm Project | Danielle Lindblom Portfolio</title>
-      <h1 className="text-3xl my-4">Elfgorithm</h1>
+      <motion.h1
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        className="text-3xl my-4"
+      >
+        Elfgorithm
+      </motion.h1>
       <Image
         src="/projectSummary/elfcover.jpg"
         alt="Elfgorithm website"
@@ -33,8 +47,17 @@ export default function Elfgorithm() {
           height: "auto",
         }}
       />
-      <section>
-        <p className="text-lg/8 mt-8 text-balance">
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+      >
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          className="text-lg/8 mt-8 text-balance"
+        >
           Elfgorithm is a Secret Santa SaaS app created as a part of the
           Gridiron Survivor Software Engineering Apprenticeship. This website
           allows users to set up a gift exchange group and utilizes the OpenAI
@@ -49,36 +72,105 @@ export default function Elfgorithm() {
           <br />
           <br />I also enjoyed working directly in the code base, making UI/UX
           and functionality improvements as well as addressing bugs.
-        </p>
-      </section>
-      <section>
-        <h2 className="text-2xl mb-8 mt-12 font-semibold">Key Contributions</h2>
-        <ul className="list-disc list-outside ms-8 text-lg space-y-4 marker:text-primary text-balance">
-          <li>Comprehensive audit identifying gaps in testing</li>
-          <li>
+        </motion.p>
+      </motion.section>
+      <motion.section>
+        <motion.h2
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          className="text-2xl mb-8 mt-12 font-semibold"
+        >
+          Key Contributions
+        </motion.h2>
+        <motion.ul
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          className="list-disc list-outside ms-8 text-lg space-y-4 marker:text-primary text-balance"
+        >
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
+            Comprehensive audit identifying gaps in testing
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
             200+ tickets generated for the creation of unit, integration, and
             E2E tests
-          </li>
-          <li>Created logout feature</li>
-          <li>Championed an accessibility audit of the entire site</li>
-          <li>Identified 24+ accessibility issues across 3 pages</li>
-          <li>Created onboarding training on our PR processes</li>
-          <li>Addressed accessibility color contrast issue</li>
-        </ul>
-      </section>
-      <section>
-        <ul className="flex flex-row gap-4 text-sm flex-wrap pt-12">
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
+            Created logout feature
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
+            Championed an accessibility audit of the entire site
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
+            Identified 24+ accessibility issues across 3 pages
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
+            Created onboarding training on our PR processes
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
+            Addressed accessibility color contrast issue
+          </motion.li>
+        </motion.ul>
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+      >
+        <motion.ul
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          className="flex flex-row gap-4 text-sm flex-wrap pt-12"
+        >
           {tags.map((tag) => (
-            <li
+            <motion.li
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.7 }}
               key={tag}
               className="border-2 border-primary rounded-full bg-card px-2"
             >
               {tag}
-            </li>
+            </motion.li>
           ))}
-        </ul>
-      </section>
-      <div className="flex flex-row flex-wrap gap-8 my-12">
+        </motion.ul>
+      </motion.section>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        className="flex flex-row flex-wrap gap-8 my-12"
+      >
         <Button asChild size="lg">
           <Link
             href="https://staging.secretsanta-exchange.com/"
@@ -95,7 +187,7 @@ export default function Elfgorithm() {
             Code <FaGithub aria-hidden="true" />
           </Link>
         </Button>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }

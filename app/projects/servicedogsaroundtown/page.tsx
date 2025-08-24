@@ -1,8 +1,11 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { Globe } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export default function SDAT() {
   const tags = [
@@ -14,11 +17,22 @@ export default function SDAT() {
     "Firebase",
   ];
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.7 }}
+    >
       <title>
         Service Dogs Around Town Project | Danielle Lindblom Portfolio
       </title>
-      <h1 className="text-3xl mt-12 text-balance">Service Dogs Around Town</h1>
+      <motion.h1
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        className="text-3xl mt-12 text-balance"
+      >
+        Service Dogs Around Town
+      </motion.h1>
       <Image
         src="/projectSummary/sdatv3cover.png"
         alt="Service Dogs Around Town website"
@@ -33,8 +47,17 @@ export default function SDAT() {
           height: "auto",
         }}
       />
-      <section>
-        <p className="text-lg/8 mt-8 text-balance">
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+      >
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          className="text-lg/8 mt-8 text-balance"
+        >
           This is a personal project. It was broken down into multiple versions
           and deployments, and is now a multi-user, public application utilizing
           a database and multiple APIs. This is the third and final version of
@@ -52,42 +75,117 @@ export default function SDAT() {
           <br />
           There are links to the details on Versions 1 and 2 at the bottom of
           the page.
-        </p>
-      </section>
-      <section>
-        <h2 className="text-2xl mb-8 mt-12 font-semibold">Key Features</h2>
-        <ul className="list-disc list-outside ms-8 text-lg space-y-4 marker:text-primary text-balance">
-          <li>Google login</li>
-          <li>Search for a business with Google Maps Autocomplete API</li>
-          <li>
+        </motion.p>
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+      >
+        <motion.h2
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          className="text-2xl mb-8 mt-12 font-semibold"
+        >
+          Key Features
+        </motion.h2>
+        <motion.ul
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          className="list-disc list-outside ms-8 text-lg space-y-4 marker:text-primary text-balance"
+        >
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
+            Google login
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
+            Search for a business with Google Maps Autocomplete API
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
             Rate, review, and save private and public notes about that business
             with a custom form
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
             See all existing businesses that have been rated in the library
-          </li>
-          <li>Learn more about the app on the About page</li>
-          <li>Filter to see just your own entries</li>
-          <li>Filter map markers and list view by your favorites</li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
+            Learn more about the app on the About page
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
+            Filter to see just your own entries
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
+            Filter map markers and list view by your favorites
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
             Navigate to the ADA.gov website for information on federal service
             dog laws
-          </li>
-        </ul>
-      </section>
-      <section>
-        <ul className="flex flex-row gap-4 text-sm flex-wrap pt-12">
+          </motion.li>
+        </motion.ul>
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+      >
+        <motion.ul
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          className="flex flex-row gap-4 text-sm flex-wrap pt-12"
+        >
           {tags.map((tag) => (
-            <li
+            <motion.li
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.7 }}
               key={tag}
               className="border-2 border-primary rounded-full bg-card px-2"
             >
               {tag}
-            </li>
+            </motion.li>
           ))}
-        </ul>
-      </section>
-      <div className="flex flex-row flex-wrap gap-x-8 gap-y-4 my-12">
+        </motion.ul>
+      </motion.section>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        className="flex flex-row flex-wrap gap-x-8 gap-y-4 my-12"
+      >
         <Button asChild size="lg">
           <Link
             href="https://servicedogsaroundtown.vercel.app/"
@@ -117,7 +215,7 @@ export default function SDAT() {
             Version 1 <Globe aria-hidden="true" />
           </Link>
         </Button>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
