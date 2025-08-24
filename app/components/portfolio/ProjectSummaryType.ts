@@ -2,7 +2,7 @@ export type ProjectSummaryType = {
   title: string;
   description: string;
   tags: string[];
-  type: "freelance" | "solo" | "apprenticeship";
+  type: string;
   links: string[];
   img: string;
 };

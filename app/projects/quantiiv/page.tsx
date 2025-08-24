@@ -1,7 +1,10 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { Globe } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Quantiiv() {
   const tags = [
@@ -12,9 +15,20 @@ export default function Quantiiv() {
     "shadcn/ui",
   ];
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.7 }}
+    >
       <title>Quantiiv Project | Danielle Lindblom Portfolio</title>
-      <h1 className="text-3xl my-4">Quantiiv</h1>
+      <motion.h1
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        className="text-3xl my-4"
+      >
+        Quantiiv
+      </motion.h1>
       <Image
         src="/projectSummary/quantiivCover.png"
         alt="Quantiiv website"
@@ -29,8 +43,17 @@ export default function Quantiiv() {
           height: "auto",
         }}
       />
-      <section>
-        <p className="text-lg/8 mt-8 text-balance">
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+      >
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          className="text-lg/8 mt-8 text-balance"
+        >
           This freelance project was to build an entire business website for
           Quantiiv - a restaurant industry consultancy that utilizes AI and
           analytics. I worked with a small team of designers and developers to
@@ -54,40 +77,103 @@ export default function Quantiiv() {
           <br />
           *Note: the GitHub repo is currently private but will be made public
           upon the launch of V2.
-        </p>
-      </section>
-      <section>
-        <h2 className="text-2xl mb-8 mt-12 font-semibold">Key Contributions</h2>
-        <ul className="list-disc list-outside ms-8 text-lg space-y-4 marker:text-primary text-balance">
-          <li>Built entire Contact and About pages, including form</li>
-          <li>Built an interactive, accessible wheel of popovers</li>
-          <li>
+        </motion.p>
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+      >
+        <motion.h2
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          className="text-2xl mb-8 mt-12 font-semibold"
+        >
+          Key Contributions
+        </motion.h2>
+        <motion.ul
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          className="list-disc list-outside ms-8 text-lg space-y-4 marker:text-primary text-balance"
+        >
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
+            Built entire Contact and About pages, including form
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
+            Built an interactive, accessible wheel of popovers
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
             Conducted detailed accessibility audits using code analysis and
             testing tools
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
             Identified and resolved 32+ accessibility issues during production
-          </li>
-          <li>Created the testimonials section of the home page</li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
+            Created the testimonials section of the home page
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
             Worked from detailed Figma designs and ensured cross-browser
             compatibile code
-          </li>
-        </ul>
-      </section>
-      <section>
-        <ul className="flex flex-row gap-4 text-sm flex-wrap pt-12">
+          </motion.li>
+        </motion.ul>
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+      >
+        <motion.ul
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          className="flex flex-row gap-4 text-sm flex-wrap pt-12"
+        >
           {tags.map((tag) => (
-            <li
+            <motion.li
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.7 }}
               key={tag}
               className="border-2 border-primary rounded-full bg-card px-2"
             >
               {tag}
-            </li>
+            </motion.li>
           ))}
-        </ul>
-      </section>
-      <div className="flex flex-row flex-wrap gap-8 mt-24 mb-12">
+        </motion.ul>
+      </motion.section>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        className="flex flex-row flex-wrap gap-8 mt-24 mb-12"
+      >
         <Button asChild size="lg">
           <Link href="https://quantiiv.com" target="_blank">
             Live Site <Globe aria-hidden="true" />
@@ -98,7 +184,7 @@ export default function Quantiiv() {
             V2 Preview <Globe aria-hidden="true" />
           </Link>
         </Button>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }

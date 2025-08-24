@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
 import { X, Download, Lightbulb, LightbulbOff } from "lucide-react";
@@ -5,6 +7,7 @@ import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "next-themes";
 import { FocusTrap } from "focus-trap-react";
+import { motion } from "framer-motion";
 
 type DrawerProps = {
   isOpen: boolean;
@@ -15,26 +18,45 @@ export default function MobileNav({ isOpen, closeMenu }: DrawerProps) {
   const { theme, setTheme } = useTheme();
   return (
     <FocusTrap active={isOpen}>
-      <div
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
         className={`fixed top-0 right-0 py-6 z-10 h-full w-full transition-transform duration-300 transform bg-primary text-background flex flex-col justify-center items-center ${
           isOpen ? "translate-x-0" : "translate-x-full invisible"
         }`}
       >
-        <button
+        <motion.button
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
           onClick={closeMenu}
           className="fixed top-8 right-6 border border-transparent hover:border-foreground cursor-pointer"
           aria-label="close menu"
           tabIndex={isOpen ? 0 : -1}
         >
           <X aria-hidden="true" />
-        </button>
-        <ul className="text-lg flex flex-col gap-4">
-          <li>
+        </motion.button>
+        <motion.ul
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          className="text-lg flex flex-col gap-4"
+        >
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
             <Link href="/" onClick={closeMenu} tabIndex={isOpen ? 0 : -1}>
               Home
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
             <Link
               href="/#portfolio"
               onClick={closeMenu}
@@ -42,8 +64,12 @@ export default function MobileNav({ isOpen, closeMenu }: DrawerProps) {
             >
               Portfolio
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
             <Link
               href="/resume.pdf"
               className="flex flex-row gap-1 items-center"
@@ -52,12 +78,20 @@ export default function MobileNav({ isOpen, closeMenu }: DrawerProps) {
               Resume
               <Download size={20} aria-label="download" />
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
             <Separator />
-          </li>
+          </motion.li>
 
-          <li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
             <Link
               href="mailto:danielle.lindblom@gmail.com"
               className="flex flex-row items-center gap-2"
@@ -77,8 +111,12 @@ export default function MobileNav({ isOpen, closeMenu }: DrawerProps) {
               </svg>
               Email
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
             <Link
               href="https://www.linkedin.com/in/danielle-lindblom/"
               target="_blank"
@@ -99,8 +137,12 @@ export default function MobileNav({ isOpen, closeMenu }: DrawerProps) {
               </svg>
               LinkedIn
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
             <Link
               href="https://github.com/Danielle254"
               target="_blank"
@@ -121,11 +163,19 @@ export default function MobileNav({ isOpen, closeMenu }: DrawerProps) {
               </svg>
               GitHub
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
             <Separator />
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
             <Button
               variant="outline"
               className="text-foreground"
@@ -140,9 +190,9 @@ export default function MobileNav({ isOpen, closeMenu }: DrawerProps) {
                 <Lightbulb aria-hidden="true" />
               )}
             </Button>
-          </li>
-        </ul>
-      </div>
+          </motion.li>
+        </motion.ul>
+      </motion.div>
     </FocusTrap>
   );
 }

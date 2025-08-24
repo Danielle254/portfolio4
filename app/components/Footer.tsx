@@ -1,17 +1,40 @@
+"use client";
+
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-4 border-t-2 border-accent">
-      <div className="max-w-6xl mx-auto flex flex-col items-start">
-        <p className="text-primary text-base font-semibold mb-4">
+    <motion.footer
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.7 }}
+      className="py-4 border-t-2 border-accent"
+    >
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        className="max-w-6xl mx-auto flex flex-col items-start"
+      >
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          className="text-primary text-base font-semibold mb-4"
+        >
           Danielle Lindblom - Frontend Software Developer
           <br />
           Minneapolis, MN
-        </p>
-        <p className="text-xs sm:text-sm mb-4">
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          className="text-xs sm:text-sm mb-4"
+        >
           This site built with <span className="font-semibold">Next.js</span>,{" "}
           <span className="font-semibold">React.js</span>,{" "}
           <span className="font-semibold">TypeScript</span>,{" "}
@@ -26,20 +49,36 @@ const Footer: React.FC = () => {
             View code
           </a>
           .
-        </p>
-        <p className="text-xs sm:text-sm mb-4">
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          className="text-xs sm:text-sm mb-4"
+        >
           &copy; {currentYear} Danielle Lindblom. All rights reserved.
-        </p>
-        <div className="flex space-x-6">
-          <a
+        </motion.p>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          className="flex space-x-6"
+        >
+          <motion.a
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
             href="mailto:danielle.lindblom@gmail.com"
             className="hover:text-primary transition-colors duration-200"
             aria-label="Email"
             title="Email"
           >
             <FaEnvelope className="h-6 w-6" aria-hidden="true" />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
             href="https://github.com/Danielle254"
             target="_blank"
             rel="noopener noreferrer"
@@ -48,8 +87,11 @@ const Footer: React.FC = () => {
             title="GitHub"
           >
             <FaGithub className="h-6 w-6" aria-hidden="true" />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
             href="https://www.linkedin.com/in/danielle-lindblom/"
             target="_blank"
             rel="noopener noreferrer"
@@ -58,10 +100,10 @@ const Footer: React.FC = () => {
             title="LinkedIn"
           >
             <FaLinkedin className="h-6 w-6" aria-hidden="true" />
-          </a>
-        </div>
-      </div>
-    </footer>
+          </motion.a>
+        </motion.div>
+      </motion.div>
+    </motion.footer>
   );
 };
 
