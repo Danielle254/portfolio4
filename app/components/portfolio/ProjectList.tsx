@@ -30,6 +30,25 @@ const projectSummaryData = [
     img: "/projectSummary/greatharvestcover.jpg",
   },
   {
+    title: "Service Dogs Around Town",
+    description: "Community navigation tool",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "React.js",
+      "Google Maps API",
+      "Material UI",
+      "Firebase",
+    ],
+    type: "Solo",
+    links: [
+      "/projects/servicedogsaroundtown",
+      "https://servicedogsaroundtown.vercel.app/",
+      "https://github.com/Danielle254/sdat_v3",
+    ],
+    img: "/projectSummary/sdatv3cover.png",
+  },
+  {
     title: "Elfgorithm",
     description: "Secret Santa SaaS app",
     tags: [
@@ -49,25 +68,6 @@ const projectSummaryData = [
       "https://github.com/LetsGetTechnical/elecretanta",
     ],
     img: "/projectSummary/elfcover.jpg",
-  },
-  {
-    title: "Service Dogs Around Town",
-    description: "Community navigation tool",
-    tags: [
-      "Next.js",
-      "TypeScript",
-      "React.js",
-      "Google Maps API",
-      "Material UI",
-      "Firebase",
-    ],
-    type: "Solo",
-    links: [
-      "/projects/servicedogsaroundtown",
-      "https://servicedogsaroundtown.vercel.app/",
-      "https://github.com/Danielle254/sdat_v3",
-    ],
-    img: "/projectSummary/sdatv3cover.png",
   },
 ];
 

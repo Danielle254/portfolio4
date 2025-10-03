@@ -1,7 +1,8 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import { useState } from "react";
+import { RotatingLines } from "react-loader-spinner";
 import Link from "next/link";
 import { Globe } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
@@ -9,6 +10,11 @@ import { motion } from "framer-motion";
 
 export default function GreatHarvest() {
   const tags = ["Next.js", "TypeScript", "React.js", "Tailwind CSS"];
+  const [videoIsLoading, setVideoIsLoading] = useState(true);
+
+  function hideSpinner() {
+    setVideoIsLoading(false);
+  }
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -24,20 +30,33 @@ export default function GreatHarvest() {
       >
         Great Harvest Bread Company
       </motion.h1>
-      <Image
-        src="/projectSummary/greatharvestcover.jpg"
-        alt="Great Harvest website"
-        sizes="100vw"
-        width={0}
-        height={0}
-        style={{
-          borderRadius: "5px",
-          border: "1px solid black",
-          width: "100%",
-          margin: "16px 0",
-          height: "auto",
-        }}
-      />
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        className="relative mx-auto h-0 pb-[56%] lg:pb-[56%]"
+      >
+        {videoIsLoading ? (
+          <div className="flex flex-col items-center pt-12">
+            <RotatingLines
+              visible={true}
+              width="90"
+              strokeColor="gray"
+              strokeWidth="2"
+              animationDuration="0.99"
+              aria-hidden="true"
+            />
+          </div>
+        ) : null}
+        <iframe
+          className="absolute w-full h-full left-0 top-0 rounded"
+          src="https://www.loom.com/embed/39246c723c2e4f79a1aefb5c25213a56?sid=91c5eb60-1c7e-4d2e-9fa8-c1cdf5c778fe?hideEmbedTopBar=true"
+          allowFullScreen
+          title="screenshare demo of project website features"
+          aria-hidden="true"
+          onLoad={hideSpinner}
+        ></iframe>
+      </motion.div>
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

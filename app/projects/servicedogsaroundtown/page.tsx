@@ -1,7 +1,8 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import { useState } from "react";
+import { RotatingLines } from "react-loader-spinner";
 import Link from "next/link";
 import { Globe } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
@@ -16,6 +17,11 @@ export default function SDAT() {
     "Material UI",
     "Firebase",
   ];
+  const [videoIsLoading, setVideoIsLoading] = useState(true);
+
+  function hideSpinner() {
+    setVideoIsLoading(false);
+  }
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -29,24 +35,37 @@ export default function SDAT() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.7 }}
-        className="text-3xl mt-12 text-balance"
+        className="text-3xl mt-12 text-balance mb-4"
       >
         Service Dogs Around Town
       </motion.h1>
-      <Image
-        src="/projectSummary/sdatv3cover.png"
-        alt="Service Dogs Around Town website"
-        sizes="100vw"
-        width={0}
-        height={0}
-        style={{
-          borderRadius: "5px",
-          border: "1px solid black",
-          width: "100%",
-          margin: "16px 0",
-          height: "auto",
-        }}
-      />
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        className="relative mx-auto h-0 pb-[56%] lg:pb-[56%]"
+      >
+        {videoIsLoading ? (
+          <div className="flex flex-col items-center pt-12">
+            <RotatingLines
+              visible={true}
+              width="90"
+              strokeColor="gray"
+              strokeWidth="2"
+              animationDuration="0.99"
+              aria-hidden="true"
+            />
+          </div>
+        ) : null}
+        <iframe
+          className="absolute w-full h-full left-0 top-0 rounded"
+          src="https://www.loom.com/embed/1c7e2c8098984b189a144b35654393de?sid=386977cf-1e47-41a1-9257-e4b96f011e3b?hideEmbedTopBar=true"
+          allowFullScreen
+          title="screenshare demo of project website features"
+          aria-hidden="true"
+          onLoad={hideSpinner}
+        ></iframe>
+      </motion.div>
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
