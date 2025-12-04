@@ -9,7 +9,7 @@ const projectSummaryData = [
     title: "Quantiiv",
     description: "Business website",
     tags: ["Next.js", "TypeScript", "React.js", "Tailwind CSS", "shadcn/ui"],
-    type: "Freelance",
+    type: "Freelance | Team",
     links: [
       "/projects/quantiiv",
       "https://quantiiv-v2.vercel.app/",
@@ -21,7 +21,7 @@ const projectSummaryData = [
     title: "Great Harvest Baking",
     description: "Marketing landing page",
     tags: ["Next.js", "TypeScript", "React.js", "Tailwind CSS"],
-    type: "Freelance",
+    type: "Freelance | Team",
     links: [
       "/projects/greatharvest",
       "https://franchising.greatharvest.com/",
@@ -40,7 +40,7 @@ const projectSummaryData = [
       "Material UI",
       "Firebase",
     ],
-    type: "Solo",
+    type: "Personal Project | Solo",
     links: [
       "/projects/servicedogsaroundtown",
       "https://servicedogsaroundtown.vercel.app/",
@@ -61,7 +61,7 @@ const projectSummaryData = [
       "Jest",
       "React Testing Library",
     ],
-    type: "Apprenticeship",
+    type: "Apprenticeship | Team",
     links: [
       "/projects/elfgorithm",
       "https://staging.secretsanta-exchange.com/",
