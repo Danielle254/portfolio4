@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.7 }}
-      className="py-4 border-t-2 border-accent"
+      className="py-4 border-t-2 border-accent dark:border-foreground/50"
     >
       <motion.div
         initial={{ opacity: 0 }}

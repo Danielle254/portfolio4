@@ -43,7 +43,7 @@ export default function ProjectCard({
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.7 }}
-            className="rounded-full text-sm bg-accent px-2"
+            className="rounded-full text-sm bg-accent px-2 dark:bg-foreground/80 dark:text-background"
           >
             {projectSummary.type}
           </motion.p>
@@ -72,7 +72,7 @@ export default function ProjectCard({
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.7 }}
                 key={tag}
-                className="border-[1px] border-foreground rounded-full bg-card px-1"
+                className="border-[1px] border-foreground rounded-full bg-card px-1 dark:border-foreground/60"
               >
                 {tag}
               </motion.li>
