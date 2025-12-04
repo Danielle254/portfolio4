@@ -5,6 +5,7 @@ import { useState } from "react";
 import { RotatingLines } from "react-loader-spinner";
 import Link from "next/link";
 import { Globe } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 export default function Quantiiv() {
@@ -194,13 +195,16 @@ export default function Quantiiv() {
         className="flex flex-row flex-wrap gap-8 mt-24 mb-12"
       >
         <Button asChild size="lg">
-          <Link href="https://quantiiv.com" target="_blank">
-            Live Site <Globe aria-hidden="true" />
+          <Link href="https://quantiiv-v2.vercel.app/" target="_blank">
+            V2 Preview <Globe aria-hidden="true" />
           </Link>
         </Button>
         <Button variant="outline" asChild size="lg">
-          <Link href="https://quantiiv-v2.vercel.app/" target="_blank">
-            V2 Preview <Globe aria-hidden="true" />
+          <Link
+            href="https://github.com/devanrivera98/quantiiv-v2"
+            target="_blank"
+          >
+            Code <FaGithub aria-hidden="true" />
           </Link>
         </Button>
       </motion.div>

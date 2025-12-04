@@ -12,7 +12,7 @@ const projectSummaryData = [
     type: "Freelance",
     links: [
       "/projects/quantiiv",
-      "https://quantiiv.com/",
+      "https://quantiiv-v2.vercel.app/",
       "https://github.com/devanrivera98/quantiiv-v2",
     ],
     img: "/projectSummary/quantiivCover.png",
