@@ -75,7 +75,7 @@ export default function SDAT() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.7 }}
-          className="text-lg/8 mt-8 text-balance"
+          className="text-lg/8 mt-8 text-pretty"
         >
           This is a personal project. It was broken down into multiple versions
           and deployments, and is now a multi-user, public application utilizing

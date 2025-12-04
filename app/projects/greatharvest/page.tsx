@@ -66,7 +66,7 @@ export default function GreatHarvest() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.7 }}
-          className="text-lg/8 mt-8 text-balance"
+          className="text-lg/8 mt-8 text-pretty"
         >
           With a 6 day window from design approval to customer deadline, this
           freelance project had a very fast turnaround for coding. I worked with

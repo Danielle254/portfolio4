@@ -72,7 +72,7 @@ export default function Quantiiv() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.7 }}
-          className="text-lg/8 mt-8 text-balance"
+          className="text-lg/8 mt-8 text-pretty"
         >
           This freelance project was to build an entire business website for
           Quantiiv - a restaurant industry consultancy that utilizes AI and

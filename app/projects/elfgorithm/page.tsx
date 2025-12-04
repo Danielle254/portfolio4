@@ -75,7 +75,7 @@ export default function Elfgorithm() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.7 }}
-          className="text-lg/8 mt-8 text-balance"
+          className="text-lg/8 mt-8 text-pretty"
         >
           Elfgorithm is a Secret Santa SaaS app created as a part of the
           Gridiron Survivor Software Engineering Apprenticeship. This website
