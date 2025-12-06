@@ -29,7 +29,7 @@ export default function ProjectCard({
       transition={{ duration: 0.7 }}
     >
       <Card className="h-full flex flex-col justify-between">
-        <CardHeader className="flex flex-row justify-between items-center mb-2">
+        <CardHeader className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
           <CardTitle className="text-xl font-bold">
             <motion.h3
               initial={{ opacity: 0 }}
