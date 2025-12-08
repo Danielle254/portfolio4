@@ -9,7 +9,7 @@ const projectSummaryData = [
     title: "Quantiiv",
     description: "Business website",
     tags: ["Next.js", "TypeScript", "React.js", "Tailwind CSS", "shadcn/ui"],
-    type: "Freelance | Team",
+    type: ["Freelance", "Team"],
     links: [
       "/projects/quantiiv",
       "https://quantiiv-v2.vercel.app/",
@@ -21,7 +21,7 @@ const projectSummaryData = [
     title: "Great Harvest Baking",
     description: "Marketing landing page",
     tags: ["Next.js", "TypeScript", "React.js", "Tailwind CSS"],
-    type: "Freelance | Team",
+    type: ["Freelance", "Team"],
     links: [
       "/projects/greatharvest",
       "https://franchising.greatharvest.com/",
@@ -40,7 +40,7 @@ const projectSummaryData = [
       "Material UI",
       "Firebase",
     ],
-    type: "Personal Project | Solo",
+    type: ["Personal Project", "Solo"],
     links: [
       "/projects/servicedogsaroundtown",
       "https://servicedogsaroundtown.vercel.app/",
@@ -61,7 +61,7 @@ const projectSummaryData = [
       "Jest",
       "React Testing Library",
     ],
-    type: "Apprenticeship | Team",
+    type: ["Apprenticeship", "Team"],
     links: [
       "/projects/elfgorithm",
       "https://staging.secretsanta-exchange.com/",
@@ -88,7 +88,7 @@ export default function ProjectList() {
       >
         Portfolio
       </motion.h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-stretch">
+      <div className="grid grid-cols-1 gap-8 justify-center items-stretch">
         {projectSummaryData.map((project: ProjectSummaryType) => (
           <ProjectCard projectSummary={project} key={project.title} />
         ))}
