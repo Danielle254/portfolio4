@@ -29,8 +29,23 @@ export default function ProjectCard({
       transition={{ duration: 0.7 }}
     >
       <Card className="h-full flex flex-col justify-between">
-        <CardHeader className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
-          <CardTitle className="text-xl font-bold">
+        <CardHeader className="mb-2">
+          <div className="flex flex-wrap gap-2">
+            {projectSummary.type.map((chip) => (
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.7 }}
+                key={chip}
+                className="rounded-full text-sm bg-accent px-4 py-1 dark:bg-foreground/80 dark:text-background"
+              >
+                {chip}
+              </motion.p>
+            ))}
+          </div>
+        </CardHeader>
+        <CardContent>
+          <CardTitle className="text-3xl font-bold">
             <motion.h3
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -39,17 +54,7 @@ export default function ProjectCard({
               {projectSummary.title}
             </motion.h3>
           </CardTitle>
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.7 }}
-            className="rounded-full text-sm bg-accent px-2 dark:bg-foreground/80 dark:text-background"
-          >
-            {projectSummary.type}
-          </motion.p>
-        </CardHeader>
-        <CardContent>
-          <CardDescription className="pb-4 text-foreground">
+          <CardDescription className="pb-4 text-foreground text-base">
             {projectSummary.description}
           </CardDescription>
           <Image
@@ -58,7 +63,7 @@ export default function ProjectCard({
             sizes="100vw"
             width={0}
             height={0}
-            className="border-1 border-black shadow h-auto w-full"
+            className="border-1 border-black shadow h-auto w-full my-4"
           />
           <motion.ul
             initial={{ opacity: 0 }}
@@ -72,7 +77,7 @@ export default function ProjectCard({
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.7 }}
                 key={tag}
-                className="border-[1px] border-foreground rounded-full bg-card px-1 dark:border-foreground/60"
+                className="font-medium rounded-full px-2 py-1 border-[1px] border-primary/50"
               >
                 {tag}
               </motion.li>

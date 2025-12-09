@@ -10,7 +10,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
-      <body className="max-w-[1100px] mx-auto min-h-screen flex flex-col justify-between px-4">
+      <body className="max-w-[1000px] mx-auto min-h-screen flex flex-col justify-between px-4">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
