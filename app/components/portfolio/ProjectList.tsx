@@ -88,7 +88,7 @@ export default function ProjectList() {
       >
         Portfolio
       </motion.h2>
-      <div className="grid grid-cols-1 gap-8 justify-center items-stretch">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-stretch">
         {projectSummaryData.map((project: ProjectSummaryType) => (
           <ProjectCard projectSummary={project} key={project.title} />
         ))}
