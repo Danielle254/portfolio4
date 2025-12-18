@@ -9,15 +9,15 @@
   --font-ubuntu: "Ubuntu", sans-serif;
   --font-nunito: "Nunito", sans-serif;
   --background: oklch(0.9911 0 0);
-  --foreground: oklch(0.2902 0 64.34);
+  --foreground: oklch(0.3105 0.0146 274.41);
   --card: oklch(0.9911 0 0);
-  --card-foreground: oklch(0.2902 0 64.34);
+  --card-foreground: oklch(0.3105 0.0146 274.41);
   --popover: oklch(0.9911 0 0);
   --popover-foreground: oklch(0.4386 0 0);
   --primary: oklch(0.4359 0.0736 202.54);
   --primary-foreground: oklch(0.9911 0 0);
   --secondary: oklch(0.994 0 0);
-  --secondary-foreground: oklch(0.2902 0 64.34);
+  --secondary-foreground: oklch(0.3105 0.0146 274.41);
   --muted: oklch(0.9461 0 0);
   --muted-foreground: oklch(0.2435 0 0);
   --accent: oklch(0.9461 0 0);
@@ -58,13 +58,13 @@
 }
 
 .dark {
-  --background: oklch(0.2333 0 0);
+  --background: oklch(0.3423 0.0161 272.61);
   --foreground: oklch(1 0 0);
-  --card: oklch(0.2902 0 64.34);
+  --card: oklch(0.3105 0.0146 274.41);
   --card-foreground: oklch(1 0 0);
   --popover: oklch(0.3471 0 0);
   --popover-foreground: oklch(0.7348 0 0);
-  --primary: oklch(0.8948 0.1565 168.48);
+  --primary: oklch(0.8354 0.0924 159.58);
   --primary-foreground: oklch(0.2626 0.0147 166.4589);
   --secondary: oklch(0.5382 0 0);
   --secondary-foreground: oklch(0.9851 0 0);
@@ -82,7 +82,7 @@
   --chart-3: oklch(0.709 0.1592 293.5412);
   --chart-4: oklch(0.8369 0.1644 84.4286);
   --chart-5: oklch(0.7845 0.1325 181.912);
-  --sidebar: oklch(0.2333 0 0);
+  --sidebar: oklch(0.3423 0.0161 272.61);
   --sidebar-foreground: oklch(0.6301 0 0);
   --sidebar-primary: oklch(0.4365 0.1044 156.7556);
   --sidebar-primary-foreground: oklch(0.9213 0.0135 167.1556);

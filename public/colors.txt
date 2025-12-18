@@ -6,6 +6,6 @@ primary - #025d63
 
 DARK
 
-bg - #121212
+bg - #363841
 text - #e2e8f0
-primary - #34deea
+primary - #93DCB4

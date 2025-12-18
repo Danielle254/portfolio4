@@ -51,7 +51,7 @@ export default function Header() {
               /* className={`[&.active]:underline ${
                 pathname === "/" ? "active" : ""
               }`} */
-              className="text-lg lg:text-[16px]"
+              className="text-lg font-semibold lg:text-[16px]"
             >
               Home
             </Link>
@@ -68,7 +68,7 @@ export default function Header() {
               /*               className={`[&.active]:underline ${
                 pathname === "/portfolio" ? "active" : ""
               }`} */
-              className="text-lg lg:text-[16px]"
+              className="text-lg font-semibold lg:text-[16px]"
             >
               Portfolio
             </Link>
@@ -80,7 +80,10 @@ export default function Header() {
           transition={{ duration: 0.7 }}
         >
           <Button variant="link" asChild>
-            <Link href="/resume.pdf" className="text-lg lg:text-[16px]">
+            <Link
+              href="/resume.pdf"
+              className="text-lg font-semibold lg:text-[16px]"
+            >
               Resume
               <Download aria-label="download" />
             </Link>
@@ -95,7 +98,7 @@ export default function Header() {
       >
         <Link href="/">
           <Image
-            src={theme === "light" ? "/logo.png" : "/logo-dark.png"}
+            src={theme === "light" ? "/logo.png" : "/logo-dark-new.png"}
             layout="fill"
             alt="Danielle Lindblom - Frontend Developer"
           />
