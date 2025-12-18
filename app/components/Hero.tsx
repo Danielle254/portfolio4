@@ -50,15 +50,15 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.7 }}
-            className="text-center md:text-left"
+            className="text-left min-[400px]:text-center md:text-left"
           >
             <motion.h1
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.7 }}
-              className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl mb-4"
+              className="text-xl font-medium tracking-tight sm:text-2xl md:text-4xl mb-6"
             >
-              Hi, I'm <span className="text-primary">Danielle</span>
+              Empathy-Driven Development
             </motion.h1>
             <motion.p
               initial={{ opacity: 0 }}
@@ -66,11 +66,16 @@ export default function Hero() {
               transition={{ duration: 0.7 }}
               className="text-lg text-foreground sm:text-xl max-w-2xl mx-auto md:mx-0 text-balance"
             >
-              I'm a{" "}
-              <span className="font-bold">Frontend Software Developer</span>{" "}
-              specializing in user experience and web accessibility.
-              <br />
-              Located in Minneapolis, MN and open to new opportunities!
+              I'm Danielle, a Frontend Software Developer specializing in user
+              experience and web accessibility.
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.7 }}
+              className="text-lg italic text-primary sm:text-xl max-w-2xl mx-auto md:mx-0 mt-4 text-balance"
+            >
+              Equity isn't a feature&mdash;it's my framework.
             </motion.p>
             <motion.div
               initial={{ opacity: 0 }}
@@ -131,7 +136,7 @@ export default function Hero() {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.7 }}
-                className="flex-col items-center hidden sm:flex"
+                className="flex-col items-center hidden min-[500px]:flex"
               >
                 <SiTailwindcss
                   className="h-8 w-8 text-primary"
