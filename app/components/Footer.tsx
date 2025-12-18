@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
             href="https://github.com/Danielle254/portfolio4"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition-all duration-200 hover:text-primary hover:underline"
+            className="transition-all duration-200 hover:text-primary underline"
           >
             View code
           </a>
