@@ -2,6 +2,7 @@
 
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { House } from "lucide-react";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -64,6 +65,17 @@ const Footer: React.FC = () => {
           transition={{ duration: 0.7 }}
           className="flex space-x-6"
         >
+          <motion.a
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+            href="/"
+            className="hover:text-primary transition-colors duration-200"
+            aria-label="return to home page"
+            title="Home Page"
+          >
+            <House className="h-6 w-6" aria-hidden="true" />
+          </motion.a>
           <motion.a
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
