@@ -57,6 +57,15 @@ export default function MobileNav({ isOpen, closeMenu }: DrawerProps) {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.7 }}
           >
+            <Link href="/about" onClick={closeMenu} tabIndex={isOpen ? 0 : -1}>
+              About
+            </Link>
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7 }}
+          >
             <Link
               href="/#portfolio"
               onClick={closeMenu}
@@ -86,7 +95,6 @@ export default function MobileNav({ isOpen, closeMenu }: DrawerProps) {
           >
             <Separator />
           </motion.li>
-
           <motion.li
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
