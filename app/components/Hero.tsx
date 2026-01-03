@@ -50,7 +50,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.7 }}
-            className="text-left min-[400px]:text-center md:text-left"
+            className="text-left"
           >
             <motion.h1
               initial={{ opacity: 0 }}
@@ -64,25 +64,41 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.7 }}
-              className="text-lg text-foreground sm:text-xl max-w-2xl mx-auto md:mx-0 text-balance"
+              className="text-lg text-foreground sm:text-xl max-w-2xl mx-auto md:mx-0 text-pretty"
             >
-              I'm Danielle, a Frontend Software Developer specializing in user
-              experience and web accessibility.
+              I'm <span className="text-primary font-bold">Danielle</span>,{" "}
+              <br />a Frontend Software Developer specializing in
+              <br /> user experience and web accessibility.
             </motion.p>
-            <motion.p
+            {/*             <motion.p
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.7 }}
               className="text-lg italic text-primary sm:text-xl max-w-2xl mx-auto md:mx-0 mt-4 text-balance"
             >
               Equity isn't a feature&mdash;it's my framework.
-            </motion.p>
+            </motion.p> */}
+
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.7 }}
               className="mt-8 flex flex-wrap justify-center md:justify-start gap-6"
             >
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.7 }}
+                className="flex flex-col items-center"
+              >
+                <SiTypescript
+                  className="h-8 w-8 text-primary"
+                  aria-hidden="true"
+                />
+                <motion.span className="mt-2 text-xs text-foreground/90">
+                  TypeScript
+                </motion.span>
+              </motion.div>
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -118,21 +134,8 @@ export default function Hero() {
                   React.js
                 </motion.span>
               </motion.div>
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.7 }}
-                className="flex flex-col items-center"
-              >
-                <SiTypescript
-                  className="h-8 w-8 text-primary"
-                  aria-hidden="true"
-                />
-                <motion.span className="mt-2 text-xs text-foreground/90">
-                  TypeScript
-                </motion.span>
-              </motion.div>
-              <motion.div
+
+              {/*               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.7 }}
@@ -145,7 +148,7 @@ export default function Hero() {
                 <motion.span className="mt-2 text-xs text-foreground/90">
                   Tailwind CSS
                 </motion.span>
-              </motion.div>
+              </motion.div> */}
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
