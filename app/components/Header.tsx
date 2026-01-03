@@ -1,6 +1,5 @@
 "use client";
 
-import { usePathname } from "next/navigation";
 import Link from "next/link";
 import MobileNav from "./MobileNav";
 import Image from "next/image";
@@ -24,7 +23,6 @@ import { motion } from "framer-motion";
 
 export default function Header() {
   const { theme, setTheme } = useTheme();
-  /* const pathname = usePathname(); */
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -47,13 +45,10 @@ export default function Header() {
         >
           <Button variant="link" asChild className="px-0 pr-4">
             <Link
-              href="/"
-              /* className={`[&.active]:underline ${
-                pathname === "/" ? "active" : ""
-              }`} */
+              href="/about"
               className="text-lg font-semibold lg:text-[16px]"
             >
-              Home
+              About
             </Link>
           </Button>
         </motion.li>
@@ -65,9 +60,6 @@ export default function Header() {
           <Button variant="link" asChild>
             <Link
               href="/#portfolio"
-              /*               className={`[&.active]:underline ${
-                pathname === "/portfolio" ? "active" : ""
-              }`} */
               className="text-lg font-semibold lg:text-[16px]"
             >
               Portfolio
@@ -101,6 +93,7 @@ export default function Header() {
             src={theme === "light" ? "/logo.png" : "/logo-dark-new.png"}
             layout="fill"
             alt="Danielle Lindblom - Frontend Developer"
+            title="Home Page"
           />
         </Link>
       </motion.div>

@@ -84,7 +84,7 @@ export default function ProjectCard({
             ))}
           </motion.ul>
         </CardContent>
-        <CardFooter className="flex flex-row gap-4 flex-wrap">
+        <CardFooter className="flex flex-col items-start min-[440px]:flex-row gap-4 flex-wrap">
           <Button asChild>
             <Link
               href={projectSummary.links[0]}
@@ -93,22 +93,24 @@ export default function ProjectCard({
               Details <ChevronsRight aria-hidden="true" />
             </Link>
           </Button>
-          <Button variant="outline" asChild>
+          <Button variant="link" asChild>
             <Link
               href={projectSummary.links[1]}
+              className="underline p-0 m-0"
               target="_blank"
               aria-label={`${projectSummary.title}  live site`}
             >
-              Website <Globe aria-hidden="true" />
+              Website {/* <Globe aria-hidden="true" /> */}
             </Link>
           </Button>
-          <Button variant="outline" asChild>
+          <Button variant="link" asChild>
             <Link
               href={projectSummary.links[2]}
+              className="underline"
               target="_blank"
               aria-label={`${projectSummary.title} code`}
             >
-              Code <Code aria-hidden="true" />
+              Code {/* <Code aria-hidden="true" /> */}
             </Link>
           </Button>
         </CardFooter>
