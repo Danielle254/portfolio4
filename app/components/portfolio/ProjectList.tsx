@@ -49,6 +49,25 @@ const projectSummaryData = [
     img: "/projectSummary/sdatv3cover.png",
   },
   {
+    title: "Puzzle Dogs",
+    description: "Local Small Business website",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "React.js",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Vercel",
+    ],
+    type: ["Volunteer", "Solo"],
+    links: [
+      "/projects/puzzledogs",
+      "https://puzzle-dogs.vercel.app",
+      "https://github.com/Danielle254/puzzle-dogs",
+    ],
+    img: "/projectSummary/puzzledogscover.png",
+  },
+  {
     title: "Elfgorithm",
     description: "Secret Santa SaaS app",
     tags: [
