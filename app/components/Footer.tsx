@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
         >
           Danielle Lindblom - Frontend Software Developer
           <br />
-          Minneapolis, MN
+          Missoula, MT
         </motion.p>
         <motion.p
           initial={{ opacity: 0 }}
